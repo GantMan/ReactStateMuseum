@@ -9,6 +9,7 @@
   "dependencies": {
     "mobx": "^4.2.0",
     "mobx-react": "^5.0.0",
+    "packlist-components": "^1.0.1",
     "react": "16.3.1",
     "react-native": "0.55.2"
   },

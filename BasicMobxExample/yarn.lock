@@ -4091,6 +4091,10 @@ p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
 
+packlist-components@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/packlist-components/-/packlist-components-1.0.1.tgz#babd0ec3aac7a6bebdb5244e53a29f752c993ed9"
+
 parse-glob@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/parse-glob/-/parse-glob-3.0.4.tgz#b2c376cfb11f35513badd173ef0bb6e3a388391c"
