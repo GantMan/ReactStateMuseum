@@ -1,28 +1,15 @@
 import React, { Component } from 'react'
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  LayoutAnimation
-} from 'react-native'
+import { SimpleList } from 'packlist-components'
 import {observer, inject} from 'mobx-react/native'
 
-@inject("listStore")
+@inject('listStore')
 @observer
 export default class ListItems extends Component {
-
-  listItems = () => {
-    // window.alert(this.props.allItems)
-    LayoutAnimation.spring()
-    return this.props.listStore.allItems.map(item => <Text key={item}>{item}</Text>)
-  }
-
-  render() {
+  render () {
     return (
-        <View>
-          { this.listItems() }
-        </View>
+      <SimpleList
+        value={[...this.props.listStore.allItems]}
+      />
     )
   }
 }
