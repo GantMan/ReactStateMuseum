@@ -12,7 +12,7 @@ export default class AddItems extends Component {
     const { text } = this.state
     this.setState(defaultState, () => {
       this.props.onAdd({
-        id: (new Date).getTime().toString(),
+        id: (new Date()).getTime().toString(),
         itemName: text
       })
     })
