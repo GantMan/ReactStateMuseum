@@ -1,24 +1,12 @@
 import React, { Component } from 'react'
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  LayoutAnimation
-} from 'react-native'
+import { SimpleList } from 'packlist-components'
 
 export default class ListItems extends Component {
-
-  listItems = () => {
-    LayoutAnimation.spring()
-    return this.props.allItems && this.props.allItems.map(item => <Text key={item.id}>{item.name}</Text>)
-  }
-
-  render() {
+  render () {
     return (
-        <View>
-          { this.listItems() }
-        </View>
+      <SimpleList
+        value={this.props.allItems && this.props.allItems.map(item => item.name)}
+      />
     )
   }
 }
