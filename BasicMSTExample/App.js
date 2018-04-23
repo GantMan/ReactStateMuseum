@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -22,8 +16,7 @@ import { ListStoreModel } from './MST/listStore'
 const listStore = ListStoreModel.create()
 
 export default class App extends Component {
-
-  render() {
+  render () {
     // Provider means anything can grab via @inject()
     // Will possibly leave in future versions of MST due to context
     return (
@@ -48,7 +41,6 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
     padding: 20
@@ -56,11 +48,6 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+    margin: 10
+  }
+})

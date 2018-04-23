@@ -16,7 +16,6 @@ class ObservableListStore {
   setNewItemName = (value) => {
     this.newItemName = value
   }
-
 }
 
 const observableListStore = new ObservableListStore()
