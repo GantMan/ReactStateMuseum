@@ -1,7 +1,5 @@
-// const isNotEmpty = (state) => {
-//   window.alert(JSON.stringify(state))
-//   return true
-// }
+const isEmpty = ({value}) => value === ''
+const isNotEmpty = (state) => !isEmpty(state)
 
 export default {
   initial: 'idle',
@@ -24,8 +22,7 @@ export default {
       on: {
         ADD_ITEM: {
           idle: {
-            actions: ['addItem'],
-            // cond: isNotEmpty
+            actions: ['addItem']
           }
         },
         CLEAR: {
@@ -35,12 +32,15 @@ export default {
         },
         SET_NEW_ITEM_NAME: {
           loaded: {
-            actions: ['setNewItemName']
+            actions: ['setNewItemName'],
+            cond: isNotEmpty
+          },
+          idle: {
+            actions: ['setNewItemName'],
+            cond: isEmpty
           }
         }
       }
     }
   }
 }
-
-
