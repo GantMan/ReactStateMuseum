@@ -6,7 +6,7 @@ export const PackingDefaults = {
 }
 
 export const PackingContext = React.createContext({
-  // Defaults of the context (difficult to use/see)
-  // Usually replaced right away on render event setting value
+  // Default value of the context - Only if component is outside of provider
+  // Usually replaced right away on setting value at top level for provider
   ...PackingDefaults
 })
