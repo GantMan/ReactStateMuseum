@@ -12,5 +12,6 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 * MobX
 * MobX-State-Tree
 * GraphQL with Amazon AppSync
+* setState + react-automata
 
 **To Run**, Clone this repo, then `cd` into each folder and follow the directions for that readme.
