@@ -4,7 +4,7 @@ import {
   Text,
   ScrollView
 } from 'react-native'
-import { withStatechart } from 'react-automata'
+import { State, withStatechart } from 'react-automata'
 import statechart from './Statecharts/index'
 
 import ListItems from './Components/listItems'
@@ -47,6 +47,16 @@ class App extends Component {
         <Text style={styles.welcome}>
           Welcome to setState + react-automata
         </Text>
+        <State value='idle'>
+          <Text>
+            Current State 'idle'
+          </Text>
+        </State>
+        <State value='loaded'>
+          <Text>
+            Current State 'loaded'
+          </Text>
+        </State>
         <AddItems
           addItem={this.handAddItem}
           setNewItemName={this.handleSetNewItemName}
