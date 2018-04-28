@@ -244,7 +244,7 @@ exports[`all state snapshots: loaded 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      Current State 'idle'
+      Current State 'loaded'
     </Text>
     <View
       style={
@@ -270,7 +270,7 @@ exports[`all state snapshots: loaded 1`] = `
             "paddingHorizontal": 4,
           }
         }
-        value=""
+        value={undefined}
       />
       <View
         accessibilityComponentType={undefined}

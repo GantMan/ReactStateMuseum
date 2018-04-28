@@ -10,7 +10,7 @@ import statechart from './Statecharts/index'
 import ListItems from './Components/listItems'
 import AddItems from './Components/addItems'
 
-class App extends Component {
+export class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
