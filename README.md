@@ -5,13 +5,13 @@
 </p>
 
 **One Packing List App Written In**
-* setState
-* React 16.x Context
-* Redux
-* MobX
-* MobX-State-Tree
-* GraphQL with Amazon AppSync
-* setState + react-automata
+* setState - [React](https://codesandbox.io/s/6z7890wr3z) | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicSetStateExample)
+* React 16.x Context - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicContextExample)
+* Redux - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicReduxExample)
+* MobX - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMobxExample)
+* MobX-State-Tree - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMSTExample)
+* GraphQL with Amazon AppSync - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicAppSyncExample)
+* setState + react-automata - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactAutomata)
 
 ### Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.
 
@@ -19,7 +19,8 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 
 ![example gif of app](https://github.com/GantMan/ReactStateMuseum/blob/master/_art/museum.gif?raw=true)
 
-**To Run**, Clone this repo, then `cd` into each folder and follow the directions for that readme.
+**To Run Web**, Click the codesandbox link in the list above
+**To Run Native**, Clone this repo, then `cd` into each folder and follow the directions for that readme.
 
 ### Info Table
 
@@ -32,3 +33,4 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 | MobX-State-Tree                 | 114           | Yes                 | Yes         |
 | GraphQL Apollo + Amazon AppSync | 229           | No                  | No          |
 | setState + react-automata       | ???           | No                  | No          |
+
