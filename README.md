@@ -5,13 +5,17 @@
 </p>
 
 **One Packing List App Written In**
-* setState - [React](https://codesandbox.io/s/6z7890wr3z) | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicSetStateExample)
-* React 16.x Context - [React](https://codesandbox.io/s/wynjll10n5?autoresize=1) | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicContextExample)
-* Redux - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicReduxExample)
-* MobX - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMobxExample)
-* MobX-State-Tree - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMSTExample)
-* GraphQL with Amazon AppSync - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicAppSyncExample)
-* setState + react-automata - React | [React Native](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactAutomata)
+
+|           Technology            |                              React                               |                                        React Native                                         |
+| ------------------------------- | :--------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| setState                        |       [Sandbox Link](https://codesandbox.io/s/6z7890wr3z)        | [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicSetStateExample) |
+| React 16.x Context              | [Sandbox Link](https://codesandbox.io/s/wynjll10n5?autoresize=1) | [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicContextExample)  |
+| Redux                           |                                                                  |  [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicReduxExample)   |
+| Mobx                            |                                                                  |   [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMobxExample)   |
+| MobX-State-Tree                 |                                                                  |   [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMSTExample)    |
+| GraphQL Apollo + Amazon AppSync |                                                                  | [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicAppSyncExample)  |
+| setState + react-automata       | [Sandbox Link](https://codesandbox.io/s/ym7nq0owyx?autoresize=1) |    [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactAutomata)     |
+
 
 ### Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.
 
