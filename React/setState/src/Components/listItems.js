@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import PL from "packlist-components";
+import { SimpleList } from "packlist-components";
 
-export default class SimpleList extends Component {
+export default class ListItems extends Component {
   render() {
-    return <PL.SimpleList value={this.props.allItems} />;
+    return <SimpleList value={this.props.allItems} />;
   }
 }

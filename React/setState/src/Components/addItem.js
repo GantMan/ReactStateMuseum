@@ -1,4 +1,4 @@
 import React, { Component } from "react";
-import PL from "packlist-components";
+import { AddPackingItem } from "packlist-components";
 
-export default PL.AddPackingItem;
+export default AddPackingItem;
