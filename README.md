@@ -15,7 +15,7 @@
 | MobX-State-Tree                 | [Sandbox Link](https://codesandbox.io/s/38x0k1ol31?autoresize=1) |   [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicMSTExample)    |
 | GraphQL Apollo + Amazon AppSync |               API Secrets                                        | [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/BasicAppSyncExample)  |
 | setState + react-automata       | [Sandbox Link](https://codesandbox.io/s/ym7nq0owyx?autoresize=1) |    [Github Link](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactAutomata)     |
-
+| unstated                        | [Sandbox Link](https://codesandbox.io/s/q8jpnpm8n6?autoresize=1) | Not yet |
 
 ### Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.
 
