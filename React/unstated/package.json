@@ -1,0 +1,21 @@
+{
+  "name": "unstated-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of unstated",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "packlist-components": "1.2.0",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "unstated": "2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
