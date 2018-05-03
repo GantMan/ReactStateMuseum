@@ -26,15 +26,3 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 **To Run Web**, Click the codesandbox link in the list above
 **To Run Native**, Clone this repo, then `cd` into each folder and follow the directions for that readme.
 
-### Info Table
-
-| Technology                      | Lines of Code | Supports Middleware | Time Travel |
-| ----------                      |:-------------:|:-------------------:|:------------|
-| setState                        | 103           | No                  | No          |
-| React 16.x Context              | 122           | No                  | No          |
-| Redux                           | 174           | Yes                 | Yes         |
-| Mobx                            | 102           | No                  | No          |
-| MobX-State-Tree                 | 114           | Yes                 | Yes         |
-| GraphQL Apollo + Amazon AppSync | 229           | No                  | No          |
-| setState + react-automata       | ???           | No                  | No          |
-
