@@ -1,0 +1,34 @@
+{
+  "name": "ReactAutomata",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "packlist-components": "^1.2.0",
+    "path": "^0.12.7",
+    "react": "16.3.1",
+    "react-automata": "^2.0.0",
+    "react-native": "0.55.3"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [],
+    "setupFiles": [
+      "<rootDir>/__tests__/setup"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/__tests__/setup.js"
+    ]
+  }
+}

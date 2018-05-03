@@ -1,0 +1,28 @@
+{
+  "name": "BasicAppSyncExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "aws-appsync": "^1.0.15",
+    "aws-appsync-react": "^1.0.8",
+    "aws-sdk": "^2.225.1",
+    "graphql-tag": "^2.9.1",
+    "packlist-components": "^1.2.0",
+    "react": "16.3.1",
+    "react-apollo": "^2.1.3",
+    "react-native": "0.55.3"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
