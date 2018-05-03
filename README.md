@@ -4,7 +4,7 @@
   <hr/>
 </p>
 
-**One Packing List App Written In**
+**One Packing List App Written in:**
 
 |                                                     Technology                                                      |                                                                                                                                React                                                                                                                                |                                                          React Native                                                           |
 | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
@@ -19,10 +19,11 @@
 
 ### Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.
 
-Every app is meant to be small, simple, and the same as each other.  The only difference should be the state management decisions of each.  The repeated app is a Packing List, with the name based on the state technology.
+Every app is meant to be small, simple, and the same as each other.  The only difference should be the state management decisions of each.  The repeated React and ReactNative app is a Packing List, with the name based on the state technology.
 
-![example gif of app](https://github.com/GantMan/ReactStateMuseum/blob/master/_art/museum.gif?raw=true)
-
+| Web | Native |
+|-----|--------|
+|![example gif of app](./_art/museumWeb.gif?raw=true)|![example gif of app](./_art/museum.gif?raw=true)|
 
 **To Run Web**
 * Click the codesandbox link in the list above
