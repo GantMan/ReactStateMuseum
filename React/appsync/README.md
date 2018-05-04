@@ -1,6 +1,8 @@
-To run, simply
-`yarn` or `npm i`
-and then run with `react-native run-ios`
+If you use yarn, run:
+`yarn && yarn start`
+
+If you use npm, run:
+`npm i && npm run start`
 
 ## BE NICE
 The `AppSync.js` file in this repo contains my personal API key.  Additionally, whatever packlist items you add will be visible to everyone who loads/runs this app (it's just one master list for simplicity).

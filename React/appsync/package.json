@@ -1,0 +1,25 @@
+{
+  "name": "graphql-appsync-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of GraphQL and Amazon AppSync",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "aws-appsync": "1.0.17",
+    "aws-appsync-react": "1.0.10",
+    "aws-sdk": "2.232.1",
+    "graphql-tag": "2.9.2",
+    "packlist-components": "1.2.0",
+    "react": "16.3.2",
+    "react-apollo": "2.1.4",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
