@@ -10,7 +10,7 @@ import AddItems from './Components/addItems'
 import { withState } from './State/listWrap'
 import { injectState } from 'freactal'
 
-export const App = ({ rootProp, state, effects }) => {
+export const App = () => {
   return (
     <ScrollView
       contentContainerStyle={styles.container}
@@ -39,4 +39,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default withState(injectState(App))
+export default withState(App)

@@ -1,7 +1,6 @@
 import React from 'react'
 import { AddPackingItem } from 'packlist-components/native'
 import { injectState } from 'freactal'
-import { withState } from '../State/listWrap'
 
 export const AddItems = ({ state, effects }) => (
   <AddPackingItem
@@ -12,4 +11,4 @@ export const AddItems = ({ state, effects }) => (
   />
 )
 
-export default withState(injectState(AddItems))
+export default injectState(AddItems)
