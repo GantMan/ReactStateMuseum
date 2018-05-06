@@ -8,7 +8,6 @@ import {
 import ListItems from './Components/listItems'
 import AddItems from './Components/addItems'
 import { withState } from './State/listWrap'
-import { injectState } from 'freactal'
 
 export const App = () => {
   return (
