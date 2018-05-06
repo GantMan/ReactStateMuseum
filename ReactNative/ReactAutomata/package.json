@@ -10,7 +10,7 @@
     "packlist-components": "^1.2.0",
     "path": "^0.12.7",
     "react": "16.3.1",
-    "react-automata": "^2.0.0",
+    "react-automata": "^3.0.0",
     "react-native": "0.55.3"
   },
   "devDependencies": {
