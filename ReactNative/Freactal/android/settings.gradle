@@ -1,0 +1,3 @@
+rootProject.name = 'Freactal'
+
+include ':app'
