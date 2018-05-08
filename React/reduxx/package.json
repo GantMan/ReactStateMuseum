@@ -1,0 +1,24 @@
+{
+  "name": "setstate-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of ReduxX",
+  "keywords": [
+    "react state museum",
+    "reduxx"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "packlist-components": "^1.2.0",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "reduxx": "10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
