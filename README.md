@@ -18,6 +18,7 @@
 | setState + [react-automata](https://github.com/MicheleBertoli/react-automata)                                       |  [<img src="./_art/csb.png" width="40px" />](https://codesandbox.io/s/github/GantMan/ReactStateMuseum/tree/master/React/react-automata) [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/react-automata)  | [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactNative/ReactAutomata) |
 | [Freactal](https://github.com/FormidableLabs/freactal/)                                                             |        [<img src="./_art/csb.png" width="40px" />](https://codesandbox.io/s/github/GantMan/ReactStateMuseum/tree/master/React/freactal) [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/freactal)        |   [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactNative/Freactal)    |
 | [ReduxX](https://github.com/msteckyefantis/reduxx)                                                                  |          [<img src="./_art/csb.png" width="40px" />](https://codesandbox.io/s/github/GantMan/ReactStateMuseum/tree/master/React/reduxx) [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/reduxx)          |    [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactNative/ReduxX)     |
+| [pure-store](https://github.com/gunn/pure-store)                                                                    |      [<img src="./_art/csb.png" width="40px" />](https://codesandbox.io/s/github/GantMan/ReactStateMuseum/tree/master/React/pure-store) [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/pure-store)      |  [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/ReactNative/pure-store)   |
 
 ### Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.
 
@@ -26,6 +27,11 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 |                         Web                          |                      Native                       |
 | ---------------------------------------------------- | ------------------------------------------------- |
 | ![example gif of app](./_art/museumWeb.gif?raw=true) | ![example gif of app](./_art/museum.gif?raw=true) |
+
+
+## What are the differences?
+Look at the code for yourself, _OR_ check this blog post on the findings.
+> https://hackernoon.com/the-react-state-museum-a278c726315
 
 **To Run Web**
 * Click the codesandbox link in the list above
