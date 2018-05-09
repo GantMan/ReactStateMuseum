@@ -28,13 +28,13 @@ export default class App extends Component {
         {list => (
           <div style={styles}>
             <h2>Welcome to Microstates</h2>
-            <ListItems allItems={list.state.allItems} />
             <AddItems
               addItem={() => list.addItem()}
               setNewItemText={event => list.setNewItemText(event.target.value)}
               value={list.state.newItemText}
               clear={() => list.clear()}
             />
+            <ListItems allItems={list.state.allItems} />
           </div>
         )}
       </State>
