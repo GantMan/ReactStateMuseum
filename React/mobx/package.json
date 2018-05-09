@@ -9,16 +9,18 @@
     "mobx-react": "5.1.2",
     "packlist-components": "1.2.0",
     "react": "16.3.2",
+    "react-app-rewire-mobx": "^1.0.8",
     "react-dom": "16.3.2",
     "react-scripts": "1.1.4"
   },
   "devDependencies": {
-    "babel-plugin-transform-decorators-legacy": "^1.3.4"
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "react-app-rewired": "^1.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
