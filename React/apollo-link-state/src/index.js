@@ -64,7 +64,7 @@ class App extends Component {
 
             return (
               <div style={styles.div}>
-                <h2>Welcome to pollo Link State</h2>
+                <h2>Welcome to Apollo Link State</h2>
 
                 <input
                   type="text"
