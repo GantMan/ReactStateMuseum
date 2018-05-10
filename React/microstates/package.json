@@ -1,0 +1,24 @@
+{
+  "name": "microstates-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of microstates",
+  "keywords": [
+    "react state museum",
+    "microstates"
+  ],
+  "main": "src/index.js",
+  "devDependencies": {
+    "packlist-components": "^1.2.0",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "microstates": "^0.6.2",
+    "@microstates/react": "^0.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
