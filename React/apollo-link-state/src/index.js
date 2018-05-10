@@ -9,60 +9,99 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import { ApolloProvider, Query, Mutation } from "react-apollo";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
+import { Provider, Query, Mutation, client, queries, mutations } from "./store";
 
-// Client
-const client = new ApolloClient({
-  uri: "https://nx9zvp49q7.lp.gql.zone/graphql",
-  clientState: {
-    defaults: {
-      allItems: ["Hot Dog"]
-    },
-    resolvers: {
-      Mutation: {
-        addItem: (_, { newItem }, { cache }) => {
-          cache.writeData({ data: { allItems: [`${newItem}`] } });
-          return null;
-        }
-      }
-    }
+const styles = {
+  div: {
+    fontFamily: "sans-serif",
+    textAlign: "center"
+  },
+  ul: {
+    listStyle: "none",
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    padding: 0
+  },
+  li: {
+    borderBottom: "1px solid blue",
+    display: "block",
+    padding: "7.5px 2.5px 5px",
+    width: "100px",
+    margin: "0 30%"
+  },
+  input: {
+    backgroundColor: "#7a7eff",
+    padding: "7.5px"
+  },
+  addButton: {
+    backgroundColor: "#ccfecc",
+    borderRadius: "4px",
+    margin: "2px 5px",
+    padding: "7.5px"
+  },
+  cleanButton: {
+    backgroundColor: "#feaaaa",
+    borderRadius: "4px",
+    margin: "2px 5px",
+    padding: "7.5px"
   }
-});
+};
 
 // Application
 class App extends Component {
+  state = {
+    newItem: ""
+  };
+
   render() {
     return (
-      <ApolloProvider client={client}>
-        <div>
-          <Query
-            query={gql`
-              {
-                allItems @client
-              }
-            `}
-          >
-            {({ loading, error, data }) => {
-              if (loading) return "loading...";
-              if (error) return "error...";
-              console.log({ data });
-              return `Yeii! ${data.allItems}`;
-            }}
-          </Query>
-          <Mutation
-            mutation={gql`
-              mutation addItem($newItem: String) {
-                addItem(newItem: $newItem) @client
-              }
-            `}
-            variables={{ newItem: "lala" }}
-          >
-            {addItem => <button onClick={addItem}>Add Item</button>}
-          </Mutation>
-        </div>
-      </ApolloProvider>
+      <Provider client={client}>
+        <Query query={queries.ALL_ITEMS}>
+          {({ loading, error, data }) => {
+            if (loading) return "loading...";
+            if (error) return "error...";
+
+            return (
+              <div style={styles.div}>
+                <h2>Welcome to pollo Link State</h2>
+
+                <input
+                  type="text"
+                  style={styles.input}
+                  value={this.state.newItem}
+                  onChange={e => this.setState({ newItem: e.target.value })}
+                />
+                <Mutation
+                  mutation={mutations.ADD_ITEMS}
+                  variables={{ newItem: this.state.newItem }}
+                >
+                  {addItem => (
+                    <button style={styles.addButton} onClick={addItem}>
+                      Add Item
+                    </button>
+                  )}
+                </Mutation>
+                <Mutation mutation={mutations.CLEAN_ITEMS}>
+                  {cleanItems => (
+                    <button style={styles.cleanButton} onClick={cleanItems}>
+                      Clean Items
+                    </button>
+                  )}
+                </Mutation>
+
+                <ul style={styles.ul}>
+                  {data.allItems.map((item, index) => (
+                    <li key={item + index} style={styles.li}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          }}
+        </Query>
+      </Provider>
     );
   }
 }
