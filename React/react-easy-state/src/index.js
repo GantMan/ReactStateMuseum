@@ -11,21 +11,67 @@ import { render } from "react-dom";
 import { view } from "react-easy-state";
 import { items } from "./store";
 
+const styles = {
+  div: {
+    fontFamily: "sans-serif",
+    textAlign: "center"
+  },
+  ul: {
+    listStyle: "none",
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    padding: 0
+  },
+  li: {
+    borderBottom: "1px solid blue",
+    display: "block",
+    padding: "7.5px 2.5px 5px",
+    width: "100px",
+    margin: "0 30%"
+  },
+  input: {
+    backgroundColor: "#7a7eff",
+    padding: "7.5px"
+  },
+  addButton: {
+    backgroundColor: "#ccfecc",
+    borderRadius: "4px",
+    margin: "2px 5px",
+    padding: "7.5px"
+  },
+  cleanButton: {
+    backgroundColor: "#feaaaa",
+    borderRadius: "4px",
+    margin: "2px 5px",
+    padding: "7.5px"
+  }
+};
+
 const App = view(() => {
   const { newItem, allItems, updateNewItemValue, addItem, clearItems } = items;
 
   return (
-    <div>
+    <div style={styles.div}>
       <h2>Welcome to React Easy State!</h2>
       <input
         type="text"
+        style={styles.input}
         value={newItem}
         onChange={e => updateNewItemValue(e.target.value)}
       />
-      <button onClick={() => addItem("lala")}>Add Item</button>
-      <button onClick={clearItems}>Clear Items</button>
-      <ul>
-        {allItems.map((item, index) => <li key={item + index}>{item}</li>)}
+      <button style={styles.addButton} onClick={() => addItem("lala")}>
+        Add Item
+      </button>
+      <button style={styles.cleanButton} onClick={clearItems}>
+        Clear Items
+      </button>
+      <ul style={styles.ul}>
+        {allItems.map((item, index) => (
+          <li key={item + index} style={styles.li}>
+            {item}
+          </li>
+        ))}
       </ul>
     </div>
   );
