@@ -49,7 +49,7 @@ const styles = {
 };
 
 const App = view(() => {
-  const { newItem, allItems, updateNewItemValue, addItem, clearItems } = items;
+  const { newItem, allItems, setNewItemValue, addItem, clearItems } = items;
 
   return (
     <div style={styles.div}>
@@ -58,9 +58,9 @@ const App = view(() => {
         type="text"
         style={styles.input}
         value={newItem}
-        onChange={e => updateNewItemValue(e.target.value)}
+        onChange={e => setNewItemValue(e.target.value)}
       />
-      <button style={styles.addButton} onClick={() => addItem("lala")}>
+      <button style={styles.addButton} onClick={addItem}>
         Add Item
       </button>
       <button style={styles.cleanButton} onClick={clearItems}>
