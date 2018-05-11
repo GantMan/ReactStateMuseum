@@ -9,6 +9,7 @@ import withStore, { addItem, updateInput, clearAll } from './store'
 
 export class App extends Component {
   render () {
+    const { allItems, newItemName } = this.props
     return (
       <ScrollView
         contentContainerStyle={styles.container}

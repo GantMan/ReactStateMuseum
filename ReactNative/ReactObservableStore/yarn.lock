@@ -5473,9 +5473,9 @@ react-native@0.55.4:
     xmldoc "^0.4.0"
     yargs "^9.0.0"
 
-react-observable-store@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-observable-store/-/react-observable-store-1.2.2.tgz#af916cf17b0af1edcafe133c03e93afc115c6080"
+react-observable-store@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-observable-store/-/react-observable-store-1.2.3.tgz#9e1b0bd9b7a57a7c8733133793396600c2b750eb"
   dependencies:
     lodash.assign "^4.2.0"
     lodash.clonedeep "^4.5.0"

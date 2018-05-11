@@ -22,8 +22,8 @@ export const addItem = () => {
   })
 }
 
-export const updateInput = e => {
-  Store.set('museum.newItemName', e.target.value)
+export const updateInput = value => {
+  Store.set('museum.newItemName', value)
 }
 
 export const clearAll = () => {
