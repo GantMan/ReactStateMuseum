@@ -6,13 +6,29 @@
  *
  * https://github.com/GantMan/ReactStateMuseum
  ************************************************/
-import React, { Component } from "react";
+import React from "react";
 import { render } from "react-dom";
+import { view } from "react-easy-state";
+import { items } from "./store";
 
-const App = () => (
-  <div>
-    <h2>Hello world!</h2>
-  </div>
-);
+const App = view(() => {
+  const { newItem, allItems, updateNewItemValue, addItem, clearItems } = items;
+
+  return (
+    <div>
+      <h2>Welcome to React Easy State!</h2>
+      <input
+        type="text"
+        value={newItem}
+        onChange={e => updateNewItemValue(e.target.value)}
+      />
+      <button onClick={() => addItem("lala")}>Add Item</button>
+      <button onClick={clearItems}>Clear Items</button>
+      <ul>
+        {allItems.map((item, index) => <li key={item + index}>{item}</li>)}
+      </ul>
+    </div>
+  );
+});
 
 render(<App />, document.getElementById("root"));
