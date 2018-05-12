@@ -1,7 +1,8 @@
 {
   "name": "apollo-link-state-rsm",
   "version": "1.0.0",
-  "description": "React State Museum - Example of GraphQL and Amazon AppSync",
+  "description":
+    "React State Museum - Example of Apollo Link State + Native setState",
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {

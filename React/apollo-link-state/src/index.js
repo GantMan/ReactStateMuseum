@@ -50,60 +50,61 @@ const styles = {
 
 // Application
 class App extends Component {
-  state = {
-    newItem: ""
-  };
+  state = { newItem: "" };
 
   render() {
     return (
-      <Provider client={client}>
-        <Query query={queries.ALL_ITEMS}>
-          {({ loading, error, data }) => {
-            if (loading) return "loading...";
-            if (error) return "error...";
+      <Query query={queries.ALL_ITEMS}>
+        {({ loading, error, data }) => {
+          if (loading) return "loading...";
+          if (error) return "error...";
 
-            return (
-              <div style={styles.div}>
-                <h2>Welcome to Apollo Link State</h2>
+          return (
+            <div style={styles.div}>
+              <h2>Welcome to Apollo Link State</h2>
 
-                <input
-                  type="text"
-                  style={styles.input}
-                  value={this.state.newItem}
-                  onChange={e => this.setState({ newItem: e.target.value })}
-                />
-                <Mutation
-                  mutation={mutations.ADD_ITEMS}
-                  variables={{ newItem: this.state.newItem }}
-                >
-                  {addItem => (
-                    <button style={styles.addButton} onClick={addItem}>
-                      Add Item
-                    </button>
-                  )}
-                </Mutation>
-                <Mutation mutation={mutations.CLEAN_ITEMS}>
-                  {cleanItems => (
-                    <button style={styles.cleanButton} onClick={cleanItems}>
-                      Clean Items
-                    </button>
-                  )}
-                </Mutation>
+              <input
+                type="text"
+                style={styles.input}
+                value={this.state.newItem}
+                onChange={e => this.setState({ newItem: e.target.value })}
+              />
+              <Mutation
+                mutation={mutations.ADD_ITEMS}
+                variables={{ newItem: this.state.newItem }}
+              >
+                {addItem => (
+                  <button style={styles.addButton} onClick={addItem}>
+                    Add Item
+                  </button>
+                )}
+              </Mutation>
+              <Mutation mutation={mutations.CLEAN_ITEMS}>
+                {cleanItems => (
+                  <button style={styles.cleanButton} onClick={cleanItems}>
+                    Clean Items
+                  </button>
+                )}
+              </Mutation>
 
-                <ul style={styles.ul}>
-                  {data.allItems.map((item, index) => (
-                    <li key={item + index} style={styles.li}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          }}
-        </Query>
-      </Provider>
+              <ul style={styles.ul}>
+                {data.allItems.map((item, index) => (
+                  <li key={item + index} style={styles.li}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        }}
+      </Query>
     );
   }
 }
 
-render(<App />, document.getElementById("root"));
+render(
+  <Provider client={client}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
