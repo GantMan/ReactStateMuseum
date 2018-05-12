@@ -3,7 +3,9 @@ export default class List {
   newItemText = String;
 
   addItem() {
-    return this.allItems.push(this.state.newItemText).newItemText.set("");
+    return this
+      .allItems.push(this.state.newItemText)
+      .newItemText.set("");
   }
 
   setNewItemText(text) {
