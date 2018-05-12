@@ -1,11 +1,11 @@
 {
   "name": "react-easy-state-rsm",
   "version": "1.0.0",
-  "description":
-    "React State Museum - Example of State managment using react-easy-state",
+  "description": "React State Museum - Example of State management using react-easy-state",
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {
+    "packlist-components": "^1.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-easy-state": "^5.0.1",
