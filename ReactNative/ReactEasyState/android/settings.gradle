@@ -1,0 +1,3 @@
+rootProject.name = 'ReactEasyState'
+
+include ':app'
