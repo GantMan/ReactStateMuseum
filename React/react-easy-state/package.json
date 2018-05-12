@@ -1,0 +1,21 @@
+{
+  "name": "react-easy-state-rsm",
+  "version": "1.0.0",
+  "description":
+    "React State Museum - Example of State managment using react-easy-state",
+  "main": "src/index.js",
+  "keywords": [],
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-easy-state": "^5.0.1",
+    "react-scripts": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
