@@ -6,7 +6,7 @@ export const store = createStore({
 });
 
 export const actions = store => ({
-  setNewItemValue: (_, { value }) => ({ newItemValue: value }),
+  setNewItemText: (_, newValue) => ({ newItemValue: newValue }),
   addItem: ({ newItemValue, allItems }) => ({
     allItems: allItems.concat([newItemValue])
   }),
