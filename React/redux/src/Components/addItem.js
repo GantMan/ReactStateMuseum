@@ -2,7 +2,7 @@ import { AddPackingItem } from "packlist-components";
 import { ItemActionCreators } from "../Redux/Actions/items";
 import { connect } from "react-redux";
 
-const mapStateToProps = state => ({ newItemName: state.items.newItemName });
+const mapStateToProps = state => ({ value: state.items.newItemName });
 
 const { setNewItemName, addItem, clear } = ItemActionCreators;
 
