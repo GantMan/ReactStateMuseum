@@ -7,7 +7,7 @@ export const items = store({
     items.newItem = newItem
   },
   addItem () {
-    items.allItems = items.allItems.concat([items.newItem])
+    items.allItems.push(items.newItem)
     items.setNewItemValue()
   },
   clearItems () {
