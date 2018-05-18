@@ -18,31 +18,13 @@ const styles = {
   textAlign: "center"
 };
 
-const Items = ({ allItems, newItem, addItem, clearItems, setNewItemText }) => (
+const App = () => (
   <div style={styles}>
-    <h2>Welcome to React Easy State!</h2>
-    <AddItems
-      addItem={addItem}
-      setNewItemText={event => setNewItemText(event.target.value)}
-      value={newItem}
-      clear={clearItems}
-    />
-    <ListItems allItems={allItems} />
+    <h2>Welcome to Rematch</h2>
+    <AddItems />
+    <ListItems />
   </div>
 );
-
-const mapState = models => ({
-  allItems: models.items.allItems,
-  newItem: models.items.newItem
-});
-
-const mapDispatch = models => ({
-  addItem: models.items.addItem,
-  clearItems: models.items.clearItems,
-  setNewItemText: models.items.setNewItemText
-});
-
-const App = connect(mapState, mapDispatch)(Items);
 
 render(
   <Provider store={store}>
