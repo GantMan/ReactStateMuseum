@@ -10,7 +10,8 @@ export const items = {
     }),
     addItem: state => ({
       ...state,
-      allItems: state.allItems.concat([state.newItem])
+      allItems: state.allItems.concat([state.newItem]),
+      newItem: ""
     }),
     clearItems: state => ({
       ...state,
