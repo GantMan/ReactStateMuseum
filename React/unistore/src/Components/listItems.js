@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { SimpleList } from "packlist-components";
+import { connect } from "unistore/react";
+import { actions } from "../store";
 
-export default class ListItems extends Component {
-  render() {
-    return <SimpleList value={this.props.allItems} />;
-  }
-}
+export default connect(["allItems"], actions)(
+  ({ allItems }) => <SimpleList value={allItems} />
+);
