@@ -1,0 +1,3 @@
+rootProject.name = 'Rematch'
+
+include ':app'

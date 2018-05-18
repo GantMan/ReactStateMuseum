@@ -1,4 +1,4 @@
-import { AddPackingItem } from "packlist-components";
+import { AddPackingItem } from "packlist-components/native";
 import { connect } from "react-redux";
 
 const mapState = models => ({
@@ -7,7 +7,7 @@ const mapState = models => ({
 
 const mapDispatch = models => ({
   addItem: models.items.addItem,
-  setNewItemText: (event) => models.items.setNewItemText(event.target.value),
+  setNewItemText: models.items.setNewItemText,
   clear: models.items.clearItems
 })
 
