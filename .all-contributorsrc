@@ -89,6 +89,25 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "vadistic",
+      "name": "Jakub Wadas",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7434286?v=4",
+      "profile": "https://github.com/vadistic",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "RusinovAnton",
+      "name": "Anton Rusinov",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13165540?v=4",
+      "profile": "https://rusinovanton.github.io/personal-website/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
