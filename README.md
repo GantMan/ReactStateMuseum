@@ -1,5 +1,4 @@
 <p align="center">
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
   <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/rs_small.png?raw=true" width="300" />
   <h3 align="center">The React State Museum</h3>
   <hr/>
