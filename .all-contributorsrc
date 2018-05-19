@@ -137,7 +137,8 @@
       "profile": "http://gantlaborde.com/",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "example"
       ]
     }
   ]
