@@ -35,6 +35,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "taviroquai",
+      "name": "Marco Afonso",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/498409?v=4",
+      "profile": "http://afonsodev.eu/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
