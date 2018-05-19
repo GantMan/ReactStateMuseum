@@ -8,5 +8,15 @@
   ],
   "imageSize": 100,
   "commit": true,
-  "contributors": []
+  "contributors": [
+    {
+      "login": "msteckyefantis",
+      "name": "Michael Stecky-Efantis",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13184324?v=4",
+      "profile": "https://LessonShop.net",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
