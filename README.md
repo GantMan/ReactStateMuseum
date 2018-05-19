@@ -1,5 +1,5 @@
 <p align="center">
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
   <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/rs_small.png?raw=true" width="300" />
   <h3 align="center">The React State Museum</h3>
   <hr/>
@@ -52,8 +52,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/13184324?v=4" width="100px;"/><br /><sub><b>Michael Stecky-Efantis</b></sub>](https://LessonShop.net)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=msteckyefantis "Code") | [<img src="https://avatars0.githubusercontent.com/u/42500?v=4" width="100px;"/><br /><sub><b>Arthur Gunn</b></sub>](https://github.com/gunn)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=gunn "Code") |
-| :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/13184324?v=4" width="100px;"/><br /><sub><b>Michael Stecky-Efantis</b></sub>](https://LessonShop.net)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=msteckyefantis "Code") | [<img src="https://avatars0.githubusercontent.com/u/42500?v=4" width="100px;"/><br /><sub><b>Arthur Gunn</b></sub>](https://github.com/gunn)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=gunn "Code") | [<img src="https://avatars2.githubusercontent.com/u/163561?v=4" width="100px;"/><br /><sub><b>Jason Lengstorf</b></sub>](https://code.lengstorf.com)<br />[📖](https://github.com/GantMan/ReactStateMuseum/commits?author=jlengstorf "Documentation") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
