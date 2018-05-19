@@ -1,5 +1,5 @@
 <p align="center">
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
   <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/rs_small.png?raw=true" width="300" />
   <h3 align="center">The React State Museum</h3>
   <hr/>
@@ -52,8 +52,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/13184324?v=4" width="100px;"/><br /><sub><b>Michael Stecky-Efantis</b></sub>](https://LessonShop.net)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=msteckyefantis "Code") | [<img src="https://avatars0.githubusercontent.com/u/42500?v=4" width="100px;"/><br /><sub><b>Arthur Gunn</b></sub>](https://github.com/gunn)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=gunn "Code") | [<img src="https://avatars2.githubusercontent.com/u/163561?v=4" width="100px;"/><br /><sub><b>Jason Lengstorf</b></sub>](https://code.lengstorf.com)<br />[📖](https://github.com/GantMan/ReactStateMuseum/commits?author=jlengstorf "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/498409?v=4" width="100px;"/><br /><sub><b>Marco Afonso</b></sub>](http://afonsodev.eu/)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=taviroquai "Code") | [<img src="https://avatars1.githubusercontent.com/u/2072894?v=4" width="100px;"/><br /><sub><b>Robert DeLuca</b></sub>](http://robertdelu.ca)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=Robdel12 "Code") |
-| :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/13184324?v=4" width="100px;"/><br /><sub><b>Michael Stecky-Efantis</b></sub>](https://LessonShop.net)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=msteckyefantis "Code") | [<img src="https://avatars0.githubusercontent.com/u/42500?v=4" width="100px;"/><br /><sub><b>Arthur Gunn</b></sub>](https://github.com/gunn)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=gunn "Code") | [<img src="https://avatars2.githubusercontent.com/u/163561?v=4" width="100px;"/><br /><sub><b>Jason Lengstorf</b></sub>](https://code.lengstorf.com)<br />[📖](https://github.com/GantMan/ReactStateMuseum/commits?author=jlengstorf "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/498409?v=4" width="100px;"/><br /><sub><b>Marco Afonso</b></sub>](http://afonsodev.eu/)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=taviroquai "Code") | [<img src="https://avatars1.githubusercontent.com/u/2072894?v=4" width="100px;"/><br /><sub><b>Robert DeLuca</b></sub>](http://robertdelu.ca)<br />[💻](https://github.com/GantMan/ReactStateMuseum/commits?author=Robdel12 "Code") | [<img src="https://avatars2.githubusercontent.com/u/179534?v=4" width="100px;"/><br /><sub><b>stereobooster</b></sub>](https://github.com/stereobooster)<br />[📖](https://github.com/GantMan/ReactStateMuseum/commits?author=stereobooster "Documentation") |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
