@@ -1,0 +1,27 @@
+{
+  "name": "react-state-museum",
+  "version": "0.0.0",
+  "description": "A whirlwind tour of React state management systems by example",
+  "main": "index.js",
+  "scripts": {
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GantMan/ReactStateMuseum.git"
+  },
+  "keywords": [
+    "react",
+    "state"
+  ],
+  "author": "Tyler Reitz <tdreitz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GantMan/ReactStateMuseum/issues"
+  },
+  "homepage": "https://github.com/GantMan/ReactStateMuseum#readme",
+  "devDependencies": {
+    "all-contributors-cli": "^4.11.1"
+  }
+}
