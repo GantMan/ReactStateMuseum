@@ -1,0 +1,26 @@
+{
+  "name": "ReactObservableStore",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "babel-plugin-transform-inline-environment-variables": "^0.4.1",
+    "packlist-components": "^1.2.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-observable-store": "^1.2.3"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

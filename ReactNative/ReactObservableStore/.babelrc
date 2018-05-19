@@ -1,0 +1,15 @@
+{
+  "presets": ["env", "react-native"],
+  "env": {
+    "production": {
+    }
+  },
+  "plugins": [
+    [
+      "transform-inline-environment-variables",
+      {
+        "include": ["NODE_ENV"]
+      }
+    ]
+  ]
+}

@@ -39,7 +39,7 @@ export default class App extends Component {
       <div style={styles}>
         <h2>Welcome to GraphQL + Amazon AppSync</h2>
         <em>
-          Please by clean in your list, as this is shared across all examples
+          Please be clean in your list, as this is shared across all examples
         </em>
         <AddItems />
         <ListItems />

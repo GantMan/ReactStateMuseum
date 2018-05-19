@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux'
-import RootReducer from '../Reducers/'
+import RootReducer from '../Reducers'
 
 let middleware = []
 

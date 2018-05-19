@@ -10,3 +10,7 @@ and then run with `react-native run-ios`
 
 ### Tests:
 Also, in this example are automatic snapshot tests per state (feature of react-automata).  That's why I added the <State> component to this UI.  This causes a render differentiation for state to show up in snapshots.
+  
+### More
+
+[Helpful Video](https://www.youtube.com/watch?v=sZg3DoTfHLQ&mc_cid=e9c5a0712e&mc_eid=d08e406cf6)
