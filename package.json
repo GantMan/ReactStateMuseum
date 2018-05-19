@@ -1,0 +1,31 @@
+{
+  "name": "react-state-museum",
+  "version": "1.0.0",
+  "description": "Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/_mocha ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GantMan/ReactStateMuseum.git"
+  },
+  "keywords": [
+    "React",
+    "State",
+    "Museum"
+  ],
+  "author": "Gant Laborde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GantMan/ReactStateMuseum/issues"
+  },
+  "homepage": "https://github.com/GantMan/ReactStateMuseum#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
