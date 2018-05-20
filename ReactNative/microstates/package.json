@@ -7,13 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "microstates": "0.6.3",
+    "@microstates/react": "0.7.0",
+    "microstates": "^0.7.0",
     "packlist-components": "^1.2.0",
     "react": "16.3.2",
     "react-native": "0.55.3"
   },
   "devDependencies": {
-    "assign-symbols": "^1.0.0",
     "babel-jest": "22.4.3",
     "babel-preset-react-native": "4.0.0",
     "funcadelic": "0.4.0",

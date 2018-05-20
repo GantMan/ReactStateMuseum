@@ -5,45 +5,37 @@ import {
   ScrollView
 } from 'react-native'
 
-// import State from '@microstates/react';
-import ListItems from './Components/listItems'
-import AddItems from './Components/addItems'
-import assignSymbols from 'assign-symbols';
+import { SimpleList, AddPackingItem } from 'packlist-components/native'
 import ListModel from "./list";
-import { create } from 'microstates';
-
-let List = create(ListModel, {
-  allItems: ["nachos", "burritos", "hot dog"],
-  newItemText: ''
-});
+import State from '@microstates/react';
 
 export default class App extends Component {
   render() {
-    console.log(List);
-    console.log('symbol', Object.assign({}, { [Symbol()]: true }));
-    console.log('symbol', assignSymbols({key: 'value' }, { [Symbol()]: true }));
-    debugger;
     return (
-      <ScrollView
-        contentContainerStyle={styles.container}
-        keyboardShouldPersistTaps='always'
+      <State
+        type={ListModel}
+        value={{ allItems: ["nachos", "burritos", "hot dog"] }}
       >
-        <Text style={styles.welcome}>
-          Welcome to microstates
-        </Text>
-        <AddItems
-          addItem={() => List.addItem()}
-          setNewItemName={value => {
-            List.setNewItemText(value)
-          }}
-          newItemName={List.state.newItemText}
-          clear={() => List.clear()}
-        />
-        <ListItems
-          allItems={List.state.allItems}
-        />
-      </ScrollView>
-    )
+        {list => {
+          return (
+          <ScrollView
+            contentContainerStyle={styles.container}
+            keyboardShouldPersistTaps="always"
+          >
+            <Text style={styles.welcome}>Welcome to microstates</Text>
+            <AddPackingItem
+              addItem={() => list.addItem()}
+              setNewItemText={value => {
+                list.newItemText.set(value);
+              }}
+              value={list.state.newItemText}
+              clear={list.allItems.set([])}
+            />
+            <SimpleList value={list.state.allItems} />
+          </ScrollView>
+        )}}
+      </State>
+    );
   }
 }
 
