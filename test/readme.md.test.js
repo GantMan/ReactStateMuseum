@@ -1,15 +1,48 @@
 'use strict';
 /* jshint expr: true */
+const ROOT_PATH = '../';
 
-const { expect } = require( 'chai' );
+// const { expect } = require( 'chai' );
+
+const fs = require( 'fs' );
 
 
 describe( 'README.MD Tests', function() {
 
-    it( 'Making sure that each folder has been mentioned in the readme', function() {
+    it( 'Each folder has been mentioned in the readme', function() {
 
-        expect( 2 + 2 ).to.equal( 4 );
+        // TODO: add logic to get the directories
 
-        // TODO: add test code here
+        return getReadme().then( readme => {
+
+            console.log( readme );
+        });
     });
 });
+
+
+
+// helper functions
+const getReadme = () => {
+
+    const README_PATH = `${ __dirname }/${ ROOT_PATH }/README.md`;
+
+    return new Promise( ( resolve, reject ) => {
+
+        fs.readFile( README_PATH, ( err, data ) => {
+
+            if( !!err ) {
+
+                return reject( err );
+            }
+
+            resolve( data );
+        });
+
+    }).then( readmeAsBuffer => {
+
+        const readme = readmeAsBuffer.toString( 'ascii' );
+
+        return readme;
+    });
+};
