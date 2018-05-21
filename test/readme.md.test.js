@@ -9,7 +9,7 @@ const { lstat, readdir, readFile } = require( 'fs' )
 const GITHUB_URL = "https://github.com/GantMan/ReactStateMuseum";
 
 
-describe( 'README.MD Tests', function() {
+describe( 'README.md Tests', function() {
 
     it( 'Each folder has a link to it in the readme', function() {
 
