@@ -65,9 +65,9 @@ describe( 'README.MD Tests', function() {
 
                 const errorMessage = (
                     
-                    'Missing React Links:' +
+                    'Missing React links:' +
                     JSON.stringify( missingReactLinks ) +
-                    ', missing React Native Links:' +
+                    ', missing React Native links:' +
                     JSON.stringify( missingReactNativeLinks ) +
                     '.'
                 );
