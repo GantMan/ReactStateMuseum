@@ -111,7 +111,7 @@ const getDirectories = ({ path }) => {
 
     return new Promise( ( resolve, reject ) => {
         
-        return readdir( fullPath, ( err, contents ) => {
+        readdir( fullPath, ( err, contents ) => {
 
             if( !!err ) {
 
