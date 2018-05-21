@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/GantMan/ReactStateMuseum#readme",
   "devDependencies": {
+    "bluebird": "^3.5.1",
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
   }
