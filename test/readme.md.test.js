@@ -4,7 +4,7 @@ const ROOT_PATH = '../';
 
 const bluebird = require( 'bluebird' );
 
-const { lstat, readdir, readFile } = require( 'fs' )
+const { lstat, readdir, readFile } = require( 'fs' );
 
 const GITHUB_URL = "https://github.com/GantMan/ReactStateMuseum";
 
