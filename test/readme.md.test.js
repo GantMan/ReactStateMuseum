@@ -159,7 +159,10 @@ const getDirectories = ({ path }) => {
     
     }).then( results => {
 
-        const directories = results.filter( directory => !!directory );
+        const directories = results.filter(
+            
+            directoryOrNull => !!directoryOrNull
+        );
         
         return directories;
     });
