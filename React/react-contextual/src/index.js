@@ -23,7 +23,7 @@ render(
     <Subscribe to={store}>
       {props => (
         <div style={styles}>
-          <h2>Welcome to unistore</h2>
+          <h2>Welcome to react-contextual</h2>
           <AddItems {...props} />
           <ListItems {...props} />
         </div>
