@@ -8,8 +8,10 @@
  ************************************************/
 import React from "react";
 import { render } from "react-dom";
+import { Provider, Subscribe } from "react-contextual";
 import ListItems from "./Components/listItems";
 import AddItems from "./Components/addItem";
+import { store } from "./store";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -17,10 +19,16 @@ const styles = {
 };
 
 render(
-  <div style={styles}>
-    <h2>Welcome to unistore</h2>
-    <AddItems />
-    <ListItems />
-  </div>,
+  <Provider store={store}>
+    <Subscribe to={store}>
+      {props => (
+        <div style={styles}>
+          <h2>Welcome to unistore</h2>
+          <AddItems {...props} />
+          <ListItems {...props} />
+        </div>
+      )}
+    </Subscribe>
+  </Provider>,
   document.getElementById("root")
 );
