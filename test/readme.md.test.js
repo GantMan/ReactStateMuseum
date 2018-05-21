@@ -4,15 +4,14 @@ const ROOT_PATH = '../';
 
 const bluebird = require( 'bluebird' );
 
-// const { expect } = require( 'chai' );
-
 const { lstat, readdir, readFile } = require( 'fs' )
+
+const GITHUB_URL = "https://github.com/GantMan/ReactStateMuseum";
 
 
 describe( 'README.MD Tests', function() {
 
-    it( 'Each folder has been mentioned in the readme', function() {
-
+    it( 'Each folder has a link to it in the readme', function() {
 
         return bluebird.props({
             
@@ -28,13 +27,56 @@ describe( 'README.MD Tests', function() {
 
         }) => {
 
-            console.log( !!readme );
-            console.log( reactDirectories );
-            console.log( reactNativeDirectories );
+            const missingReactLinks = [];
+
+            for( const reactDirectory of reactDirectories ) {
+
+                const linkToDirectory = (
+
+                    `${ GITHUB_URL }/tree/master/React/${ reactDirectory }`
+                );
+
+                if( !readme.includes( linkToDirectory ) ) {
+                    
+                    missingReactLinks.push( linkToDirectory );
+                }
+            }
+
+            const missingReactNativeLinks = [];
+
+            for( const reactNativeDirectory of reactNativeDirectories ) {
+
+                const linkToDirectory = (
+
+                    `${ GITHUB_URL }/tree/master/` +
+                    `ReactNative/${ reactNativeDirectory }`
+                );
+
+                if( !readme.includes( linkToDirectory ) ) {
+                    
+                    missingReactNativeLinks.push( linkToDirectory );
+                }
+            }
+
+            if(
+                (missingReactLinks.length > 0) ||
+                (missingReactNativeLinks.length > 0)
+            ) {
+
+                const errorMessage = (
+                    
+                    'Missing React Links:' +
+                    JSON.stringify( missingReactLinks ) +
+                    ', missing ReactNative Links:' +
+                    JSON.stringify( missingReactNativeLinks ) +
+                    '.'
+                );
+
+                throw new Error( errorMessage );
+            }
         });
     });
 });
-
 
 
 // helper functions
@@ -90,24 +132,27 @@ const getDirectories = ({ path }) => {
                 `${ __dirname }/${ ROOT_PATH }/${ path }/${ item }`
             );
             
-            const returnIfIsDirectory = new Promise( ( resolve, reject ) => {
+            const returnIfIsDirectoryPromise = new Promise(
                 
-                lstat( ITEM_PATH, ( err, stats ) => {
+                ( resolve, reject ) => {
+                    
+                    lstat( ITEM_PATH, ( err, stats ) => {
 
-                    if( !!err ) {
+                        if( !!err ) {
 
-                        return reject( err );
-                    }
-                    else if( !stats.isDirectory() ) {
+                            return reject( err );
+                        }
+                        else if( !stats.isDirectory() ) {
 
-                        return resolve( null );
-                    }
+                            return resolve( null );
+                        }
 
-                    resolve( item );
-                });
-            });
+                        resolve( item );
+                    });
+                }
+            );
 
-            returnIfIsDirectoryPromises.push( returnIfIsDirectory );
+            returnIfIsDirectoryPromises.push( returnIfIsDirectoryPromise );
         });
 
         return Promise.all( returnIfIsDirectoryPromises );
