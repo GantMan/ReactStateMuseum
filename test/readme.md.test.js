@@ -157,9 +157,9 @@ const getDirectories = ({ path }) => {
 
         return Promise.all( returnIfIsDirectoryPromises );
     
-    }).then( returnIfIsDirectoryPromisesResults => {
+    }).then( returnIfIsDirectoryResults => {
 
-        const directories = returnIfIsDirectoryPromisesResults.filter(
+        const directories = returnIfIsDirectoryResults.filter(
             
             directoryOrNull => !!directoryOrNull
         );
