@@ -82,11 +82,11 @@ describe( 'README.MD Tests', function() {
 // helper functions
 const getReadme = () => {
 
-    const README_PATH = `${ __dirname }/${ ROOT_PATH }/README.md`;
+    const readmePath = `${ __dirname }/${ ROOT_PATH }/README.md`;
 
     return new Promise( ( resolve, reject ) => {
 
-        readFile( README_PATH, ( err, data ) => {
+        readFile( readmePath, ( err, data ) => {
 
             if( !!err ) {
 
