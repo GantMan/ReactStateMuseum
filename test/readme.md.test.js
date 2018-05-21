@@ -127,7 +127,7 @@ const getDirectories = ({ path }) => {
 
         contents.forEach( item => {
 
-            const ITEM_PATH = (
+            const itemPath = (
                 
                 `${ __dirname }/${ ROOT_PATH }/${ path }/${ item }`
             );
@@ -136,7 +136,7 @@ const getDirectories = ({ path }) => {
                 
                 ( resolve, reject ) => {
                     
-                    lstat( ITEM_PATH, ( err, stats ) => {
+                    lstat( itemPath, ( err, stats ) => {
 
                         if( !!err ) {
 
@@ -157,9 +157,9 @@ const getDirectories = ({ path }) => {
 
         return Promise.all( returnIfIsDirectoryPromises );
     
-    }).then( results => {
+    }).then( returnIfIsDirectoryPromisesResults => {
 
-        const directories = results.filter(
+        const directories = returnIfIsDirectoryPromisesResults.filter(
             
             directoryOrNull => !!directoryOrNull
         );
