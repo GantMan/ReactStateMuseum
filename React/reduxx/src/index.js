@@ -13,7 +13,7 @@ import AddItems from "./Components/addItem";
 
 const reduxX = require("./reduxx.js");
 
-const { setupReduxX, getState, setState } = reduxX;
+const { setupReduxX, getStore, getState, setState } = reduxX;
 
 const styles = {
     fontFamily: "sans-serif",
@@ -33,7 +33,9 @@ export default class App extends Component {
             except you can access it in any file
             to access the global state! #swaggy
         */
-        reduxX.store.setState(state => ({
+        const store = getStore();
+
+        store.setState(state => ({
             allItems: [...state.allItems, state.newItemName],
             newItemName: ""
         }));
