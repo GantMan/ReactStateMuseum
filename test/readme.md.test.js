@@ -67,7 +67,7 @@ describe( 'README.MD Tests', function() {
                     
                     'Missing React Links:' +
                     JSON.stringify( missingReactLinks ) +
-                    ', missing ReactNative Links:' +
+                    ', missing React Native Links:' +
                     JSON.stringify( missingReactNativeLinks ) +
                     '.'
                 );
