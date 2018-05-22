@@ -11,9 +11,7 @@ import { render } from "react-dom";
 import ListItems from "./Components/listItems";
 import AddItems from "./Components/addItem";
 
-const reduxX = require("./reduxx.js");
-
-const { setupReduxX, getStore, getState, setState } = reduxX;
+const { setupReduxX, getStore, getState, setState } = require("./reduxx.js");
 
 const styles = {
     fontFamily: "sans-serif",
