@@ -29,6 +29,7 @@
   "devDependencies": {
     "all-contributors-cli": "^4.11.1",
     "bluebird": "^3.5.1",
+    "execa": "^0.10.0",
     "mocha": "^5.2.0"
   }
 }

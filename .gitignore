@@ -4,3 +4,5 @@ node_modules/
 !.vscode/cSpell.json
 
 .jshintrc
+
+test/temporary_test_files
