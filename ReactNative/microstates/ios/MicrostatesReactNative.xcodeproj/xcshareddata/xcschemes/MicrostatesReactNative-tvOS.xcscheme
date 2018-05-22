@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "BasicSetStateExample-tvOS.app"
-               BlueprintName = "BasicSetStateExample-tvOS"
-               ReferencedContainer = "container:BasicSetStateExample.xcodeproj">
+               BuildableName = "MicrostatesReactNative-tvOS.app"
+               BlueprintName = "MicrostatesReactNative-tvOS"
+               ReferencedContainer = "container:MicrostatesReactNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "BasicSetStateExample-tvOSTests.xctest"
-               BlueprintName = "BasicSetStateExample-tvOSTests"
-               ReferencedContainer = "container:BasicSetStateExample.xcodeproj">
+               BuildableName = "MicrostatesReactNative-tvOSTests.xctest"
+               BlueprintName = "MicrostatesReactNative-tvOSTests"
+               ReferencedContainer = "container:MicrostatesReactNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "BasicSetStateExample-tvOSTests.xctest"
-               BlueprintName = "BasicSetStateExample-tvOSTests"
-               ReferencedContainer = "container:BasicSetStateExample.xcodeproj">
+               BuildableName = "MicrostatesReactNative-tvOSTests.xctest"
+               BlueprintName = "MicrostatesReactNative-tvOSTests"
+               ReferencedContainer = "container:MicrostatesReactNative.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "BasicSetStateExample-tvOS.app"
-            BlueprintName = "BasicSetStateExample-tvOS"
-            ReferencedContainer = "container:BasicSetStateExample.xcodeproj">
+            BuildableName = "MicrostatesReactNative-tvOS.app"
+            BlueprintName = "MicrostatesReactNative-tvOS"
+            ReferencedContainer = "container:MicrostatesReactNative.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "BasicSetStateExample-tvOS.app"
-            BlueprintName = "BasicSetStateExample-tvOS"
-            ReferencedContainer = "container:BasicSetStateExample.xcodeproj">
+            BuildableName = "MicrostatesReactNative-tvOS.app"
+            BlueprintName = "MicrostatesReactNative-tvOS"
+            ReferencedContainer = "container:MicrostatesReactNative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "BasicSetStateExample-tvOS.app"
-            BlueprintName = "BasicSetStateExample-tvOS"
-            ReferencedContainer = "container:BasicSetStateExample.xcodeproj">
+            BuildableName = "MicrostatesReactNative-tvOS.app"
+            BlueprintName = "MicrostatesReactNative-tvOS"
+            ReferencedContainer = "container:MicrostatesReactNative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

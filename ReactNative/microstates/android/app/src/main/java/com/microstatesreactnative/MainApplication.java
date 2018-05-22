@@ -1,4 +1,4 @@
-package com.basicsetstateexample;
+package com.microstatesreactnative;
 
 import android.app.Application;
 
