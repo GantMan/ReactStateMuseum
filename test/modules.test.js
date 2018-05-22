@@ -13,7 +13,7 @@ const TEMPORARY_TEST_FILES = 'temporary_test_files';
 
 describe( 'Modules Test', function() {
 
-    this.timeout( 169696 );
+    this.timeout( Infinity );
 
     before( function() {
 
