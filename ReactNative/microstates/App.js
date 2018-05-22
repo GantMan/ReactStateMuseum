@@ -7,8 +7,13 @@ import {
 
 import ListItems from './Components/listItems'
 import AddItems from './Components/addItems'
-import ListModel from "./list";
 import State from '@microstates/react';
+
+// Define your state model
+class ListModel {
+  allItems = [String];
+  newItemText = String;
+}
 
 export default class App extends Component {
   render() {
@@ -17,22 +22,21 @@ export default class App extends Component {
         type={ListModel}
         value={{ allItems: ["nachos", "burritos", "hot dog"] }}
       >
-        {list => {
-          return (
+        {list => (
           <ScrollView
             contentContainerStyle={styles.container}
             keyboardShouldPersistTaps="always"
           >
             <Text style={styles.welcome}>Welcome to microstates</Text>
             <AddItems
-              addItem={() => list.addItem()}
+              addItem={() => list.allItems.push(list.state.newItemText).newItemText.set('')}
               setNewItemName={(value) => list.newItemText.set(value)}
               newItemName={list.state.newItemText}
               clear={() => list.allItems.set([])}
             />
             <ListItems allItems={list.state.allItems} />
           </ScrollView>
-        )}}
+        )}
       </State>
     );
   }
