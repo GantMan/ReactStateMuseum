@@ -29,7 +29,9 @@ export default class App extends Component {
           >
             <Text style={styles.welcome}>Welcome to microstates</Text>
             <AddItems
-              addItem={() => list.allItems.push(list.state.newItemText).newItemText.set('')}
+              addItem={() =>
+                list.allItems.push(list.state.newItemText).newItemText.set('')
+              }
               setNewItemName={(value) => list.newItemText.set(value)}
               newItemName={list.state.newItemText}
               clear={() => list.allItems.set([])}

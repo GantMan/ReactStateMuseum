@@ -11,28 +11,35 @@ import { render } from "react-dom";
 import ListItems from "./Components/listItems";
 import AddItems from "./Components/addItem";
 import State from "@microstates/react";
-import List from "./list";
 
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
 };
 
+// Create our state model
+class ListModel {
+  allItems = [String];
+  newItemText = String;
+}
+
 export default class App extends Component {
   render() {
     return (
       <State
-        type={List}
+        type={ListModel}
         value={{ allItems: ["nachos", "burritos", "hot dog"] }}
       >
         {list => (
           <div style={styles}>
             <h2>Welcome to Microstates</h2>
             <AddItems
-              addItem={() => list.addItem()}
-              setNewItemText={event => list.setNewItemText(event.target.value)}
+              addItem={() =>
+                list.allItems.push(list.state.newItemText).newItemText.set("")
+              }
+              setNewItemText={event => list.newItemText.set(event.target.value)}
               value={list.state.newItemText}
-              clear={() => list.clear()}
+              clear={() => list.allItems.set([])}
             />
             <ListItems allItems={list.state.allItems} />
           </div>
