@@ -5,7 +5,8 @@ import {
   ScrollView
 } from 'react-native'
 
-import { SimpleList, AddPackingItem } from 'packlist-components/native'
+import ListItems from './Components/listItems'
+import AddItems from './Components/addItems'
 import ListModel from "./list";
 import State from '@microstates/react';
 
@@ -23,15 +24,13 @@ export default class App extends Component {
             keyboardShouldPersistTaps="always"
           >
             <Text style={styles.welcome}>Welcome to microstates</Text>
-            <AddPackingItem
+            <AddItems
               addItem={() => list.addItem()}
-              setNewItemText={value => {
-                list.newItemText.set(value);
-              }}
-              value={list.state.newItemText}
-              clear={list.allItems.set([])}
+              setNewItemName={(value) => list.newItemText.set(value)}
+              newItemName={list.state.newItemText}
+              clear={() => list.allItems.set([])}
             />
-            <SimpleList value={list.state.allItems} />
+            <ListItems allItems={list.state.allItems} />
           </ScrollView>
         )}}
       </State>
