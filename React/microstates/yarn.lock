@@ -2,14 +2,12 @@
 # yarn lockfile v1
 
 
-"@microstates/react@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@microstates/react/-/react-0.6.2.tgz#55484a289a93842b3134a69d1081f4de4e3e6f9d"
+"@microstates/react@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@microstates/react/-/react-0.7.1.tgz#d8268b4f75c72e51d7f90dc3e7c5b6899b853e1e"
   dependencies:
-    create-react-context "0.2.1"
-    funcadelic "0.3.2"
-    microstates "^0.6.1"
-    rxjs "6.0.0-alpha.3"
+    create-react-context "0.2.2"
+    prop-types "15.6.1"
 
 JSONStream@^1.3.2:
   version "1.3.2"
@@ -602,12 +600,6 @@ babel-plugin-dynamic-import-node@1.1.0:
     babel-plugin-syntax-dynamic-import "^6.18.0"
     babel-template "^6.26.0"
     babel-types "^6.26.0"
-
-babel-plugin-external-helpers@6.22.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-external-helpers/-/babel-plugin-external-helpers-6.22.0.tgz#2285f48b02bd5dede85175caf8c62e86adccefa1"
-  dependencies:
-    babel-runtime "^6.22.0"
 
 babel-plugin-istanbul@^4.0.0:
   version "4.1.6"
@@ -1887,9 +1879,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-context@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.1.tgz#425a3d96f4b7690c2fbf20aed5aeae2e2007a959"
+create-react-context@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.2.tgz#9836542f9aaa22868cd7d4a6f82667df38019dca"
   dependencies:
     fbjs "^0.8.0"
     gud "^1.0.0"
@@ -2434,7 +2426,7 @@ error-ex@^1.2.0:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.5.1, es-abstract@^1.7.0:
+es-abstract@^1.7.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.11.0.tgz#cce87d518f0496893b1a30cd8461835535480681"
   dependencies:
@@ -3173,20 +3165,11 @@ fstream@^1.0.0, fstream@^1.0.2:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-funcadelic@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/funcadelic/-/funcadelic-0.3.2.tgz#e17882d5bd743cce87f2426e1020024273ea5293"
+funcadelic@0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/funcadelic/-/funcadelic-0.4.3.tgz#2c46490df1421ab6af380e87bbcfd8bfb7d77370"
   dependencies:
-    lodash.curry "4.1.1"
-    object.getownpropertydescriptors "2.0.3"
-
-funcadelic@0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/funcadelic/-/funcadelic-0.3.6.tgz#9f6aeff11fee59157e70c1ca29f3cc37f93048cb"
-  dependencies:
-    babel-plugin-external-helpers "6.22.0"
-    lodash.curry "4.1.1"
-    object.getownpropertydescriptors "2.0.3"
+    invariant "2.2.4"
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -3229,6 +3212,12 @@ gentle-fs@^2.0.0, gentle-fs@^2.0.1:
 get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
+
+get-prototype-descriptors@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/get-prototype-descriptors/-/get-prototype-descriptors-0.6.0.tgz#37fbd24499ace002b899343b8f232ea794cea04e"
+  dependencies:
+    invariant "2.2.4"
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -3764,7 +3753,7 @@ interpret@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
 
-invariant@^2.2.2:
+invariant@2.2.4, invariant@^2.2.2:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -4709,10 +4698,6 @@ lodash.cond@^4.3.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/lodash.cond/-/lodash.cond-4.5.2.tgz#f471a1da486be60f6ab955d17115523dd1d255d5"
 
-lodash.curry@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.curry/-/lodash.curry-4.1.1.tgz#248e36072ede906501d75966200a86dab8b23170"
-
 lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
@@ -4893,6 +4878,12 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+memoize-getters@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/memoize-getters/-/memoize-getters-1.1.0.tgz#4707b4b933f95fda5daedf7ddbd37266c8cab824"
+  dependencies:
+    get-prototype-descriptors "0.6.0"
+
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
@@ -4963,12 +4954,13 @@ micromatch@^3.1.4, micromatch@^3.1.8:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-microstates@^0.6.1, microstates@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/microstates/-/microstates-0.6.2.tgz#f4ddcf40a960b18d371779ee5844aa86d1bae354"
+microstates@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/microstates/-/microstates-0.7.3.tgz#7c3bd383114b627e54c962d3de3d020cc6a9b603"
   dependencies:
-    funcadelic "0.3.6"
-    object.getownpropertydescriptors "2.0.3"
+    funcadelic "0.4.3"
+    get-prototype-descriptors "0.6.0"
+    memoize-getters "1.1.0"
     ramda "^0.25.0"
     symbol-observable "1.2.0"
 
@@ -5610,13 +5602,6 @@ object-visit@^1.0.0:
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
   dependencies:
     isobject "^3.0.0"
-
-object.getownpropertydescriptors@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.0.3.tgz#8758c846f5b407adab0f236e0986f14b051caa16"
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.5.1"
 
 object.omit@^2.0.0:
   version "2.0.1"
@@ -6363,7 +6348,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.5.10, prop-types@^15.6.0:
+prop-types@15.6.1, prop-types@^15.5.10, prop-types@^15.6.0:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -7040,10 +7025,6 @@ rx-lite-aggregates@^4.0.8:
 rx-lite@*, rx-lite@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
-
-rxjs@6.0.0-alpha.3:
-  version "6.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.0.0-alpha.3.tgz#fcce7ffcaa7c6c2cfacec23aa58a3c900c2b8148"
 
 safe-buffer@5.1.1:
   version "5.1.1"

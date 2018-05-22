@@ -2590,12 +2590,11 @@ funcadelic@0.4.0:
     lodash.curry "4.1.1"
     object.getownpropertydescriptors "2.0.3"
 
-funcadelic@0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/funcadelic/-/funcadelic-0.4.2.tgz#569cdce0afc0e7802e7257bf4ef21136899c853a"
+funcadelic@0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/funcadelic/-/funcadelic-0.4.3.tgz#2c46490df1421ab6af380e87bbcfd8bfb7d77370"
   dependencies:
     invariant "2.2.4"
-    lodash.curry "4.1.1"
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -4192,11 +4191,11 @@ micromatch@^3.1.4, micromatch@^3.1.8:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-microstates@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/microstates/-/microstates-0.7.2.tgz#eddfeefaa2527157c5b74c3796957c0a4eab46a6"
+microstates@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/microstates/-/microstates-0.7.3.tgz#7c3bd383114b627e54c962d3de3d020cc6a9b603"
   dependencies:
-    funcadelic "0.4.2"
+    funcadelic "0.4.3"
     get-prototype-descriptors "0.6.0"
     memoize-getters "1.1.0"
     ramda "^0.25.0"

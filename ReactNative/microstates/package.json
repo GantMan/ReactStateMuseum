@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@microstates/react": "0.7.1",
-    "microstates": "^0.7.2",
+    "microstates": "^0.7.3",
     "packlist-components": "^1.2.0",
     "react": "16.3.2",
     "react-native": "0.55.3"
