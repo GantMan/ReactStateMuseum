@@ -3,3 +3,5 @@ node_modules/
 .vscode/
 !.vscode/cSpell.json
 
+build/
+yarn-error.log
