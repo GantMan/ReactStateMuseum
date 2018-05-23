@@ -12,8 +12,8 @@
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-scripts": "1.1.4",
-    "microstates": "^0.6.2",
-    "@microstates/react": "^0.6.2"
+    "microstates": "^0.7.3",
+    "@microstates/react": "^0.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
