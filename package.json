@@ -4,8 +4,12 @@
   "description": "A whirlwind tour of React state management systems by example",
   "main": "index.js",
   "scripts": {
+    "test": "node_modules/mocha/bin/_mocha ./test/index.js",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
+  },
+  "directories": {
+    "test": "test"
   },
   "repository": {
     "type": "git",
@@ -13,7 +17,8 @@
   },
   "keywords": [
     "react",
-    "state"
+    "state",
+    "museum"
   ],
   "author": "Gant Laborde <gantman+github@gmail.com>",
   "license": "MIT",
@@ -22,6 +27,9 @@
   },
   "homepage": "https://github.com/GantMan/ReactStateMuseum#readme",
   "devDependencies": {
-    "all-contributors-cli": "^4.11.1"
+    "all-contributors-cli": "^4.11.1",
+    "bluebird": "^3.5.1",
+    "execa": "^0.10.0",
+    "mocha": "^5.2.0"
   }
 }

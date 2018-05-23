@@ -1,5 +1,5 @@
 {
-  "name": "setstate-rsm",
+  "name": "reduxx-rsm",
   "version": "1.0.0",
   "description": "React State Museum - Example of ReduxX",
   "keywords": [
@@ -12,7 +12,7 @@
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-scripts": "1.1.4",
-    "reduxx": "10"
+    "reduxx": "11"
   },
   "devDependencies": {},
   "scripts": {
