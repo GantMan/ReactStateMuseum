@@ -1,6 +1,6 @@
 {
   "name": "react-copy-write-rsm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React State Museum - Example of react-copy-write",
   "main": "src/index.js",
   "keywords": [],
