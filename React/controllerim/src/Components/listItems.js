@@ -1,8 +1,18 @@
 import React, { Component } from "react";
 import { SimpleList } from "packlist-components";
+import { observer } from "controllerim";
+import { ItemsController } from "../controllers";
 
-export default class ListItems extends Component {
+class ListItems extends Component {
+  componentWillMount() {
+    this.controller = new ItemsController(this);
+  }
+
   render() {
-    return <SimpleList value={this.props.allItems} />;
+    const { getAllItems: allItems = [] } = this.controller;
+
+    return <SimpleList value={allItems()} />;
   }
 }
+
+export default observer(ListItems);

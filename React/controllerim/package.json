@@ -8,6 +8,7 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "controllerim": "^1.62.0",
     "packlist-components": "^1.2.0",
     "react": "16.3.2",
     "react-dom": "16.3.2",
