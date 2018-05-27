@@ -4,7 +4,7 @@ export class ItemsController extends Controller {
   // Initial State
   state = {
     newItem: "",
-    allItems: ["Hot Dog"]
+    allItems: ["Hot Dog", "Hamburguer", "Pizza"]
   };
 
   // Accesible state
@@ -15,12 +15,12 @@ export class ItemsController extends Controller {
   setNewItemText = newVal => {
     this.state.newItem = newVal;
   };
-  setAddItem = () => {
+  addItem = () => {
     const { newItem, allItems } = this.state;
     this.state.allItems = allItems.concat([newItem]);
     this.state.newItem = "";
   };
-  setClearItems = () => {
+  clearItems = () => {
     this.state.allItems = [];
   };
 }

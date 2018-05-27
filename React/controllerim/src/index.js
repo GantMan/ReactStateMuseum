@@ -8,6 +8,7 @@
  ************************************************/
 import React from "react";
 import { render } from "react-dom";
+import ItemsProvider from "./Components/itemsProvider";
 import ListItems from "./Components/listItems";
 import AddItem from "./Components/addItem";
 
@@ -17,10 +18,14 @@ const styles = {
 };
 
 render(
-  <div style={styles}>
-    <h2>Welcome to Parket!</h2>
-    <AddItem />
-    <ListItems />
-  </div>,
+  <ItemsProvider>
+    {items => (
+      <div style={styles}>
+        <h2>Welcome to Controllerim!</h2>
+        <AddItem {...items} />
+        <ListItems {...items} />
+      </div>
+    )}
+  </ItemsProvider>,
   document.getElementById("root")
 );

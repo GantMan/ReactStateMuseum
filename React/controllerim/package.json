@@ -1,11 +1,8 @@
 {
-  "name": "setstate-rsm",
+  "name": "controllerim-rsm",
   "version": "1.0.0",
-  "description": "React State Museum - Example of setState",
-  "keywords": [
-    "react state museum",
-    "setstate"
-  ],
+  "description": "React State Museum - Example of Controllerim",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "controllerim": "^1.62.0",
