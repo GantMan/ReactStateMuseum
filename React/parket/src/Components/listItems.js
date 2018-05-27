@@ -1,8 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { SimpleList } from "packlist-components";
+import { connect } from "parket/react";
 
-export default class ListItems extends Component {
-  render() {
-    return <SimpleList value={this.props.allItems} />;
-  }
-}
+export default connect(({ store }) => <SimpleList value={store.allItems} />);
