@@ -23,11 +23,8 @@ Because if we know we have an array, then we know that we can "push"
 things onto it, and pop things off of it. There's no need to handroll those
 state transitions. They're implicit to the data type.
 
-
 ## Development
 
-If you use yarn, run:
-`yarn && yarn start`
-
-If you use npm, run:
-`npm i && npm run start`
+To run, simply
+`yarn` or `npm i`
+and then run with `react-native run-ios`
