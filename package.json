@@ -15,11 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/GantMan/ReactStateMuseum.git"
   },
-  "keywords": [
-    "react",
-    "state",
-    "museum"
-  ],
+  "keywords": ["react", "state", "museum"],
   "author": "Gant Laborde <gantman+github@gmail.com>",
   "license": "MIT",
   "bugs": {
