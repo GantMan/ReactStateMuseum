@@ -72,4 +72,9 @@ const getDirectories = ({ path }) => {
 module.exports = {
 
     getDirectories,
+
+    constants: {
+
+        TEMPORARY_TEST_FILES: 'temporary_test_files',
+    }
 };
