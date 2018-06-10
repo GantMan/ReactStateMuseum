@@ -108,18 +108,18 @@ module.exports = ({ directory }) => {
             'react-native',
 
             [
-                'build',
+                'bundle',
                 '--entry-file',
                 './index.js',
                 '--platform',
-                'ios',
-                '-dev',
+                'android',
+                '--dev',
                 'false',
                 '--reset-cache',
                 '--bundle-output',
-                './ios/main.jsbundle',
+                './android/main.jsbundle',
                 '--assets-dest',
-                './ios/release/main.jsbundle'
+                './android/app/build/main.jsbundle'
             ],
 
             {
