@@ -3,7 +3,7 @@
 
 describe( 'React State Museum Tests', function() {
 
-    require( './readme.md.test.js' );
+    require( './readme.md.test' );
 
-    require( './modules.test' );
+    require( './modules_test' );
 });

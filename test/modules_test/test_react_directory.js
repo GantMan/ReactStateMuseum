@@ -1,86 +1,24 @@
 'use strict';
 /* jshint expr: true */
-// const ROOT_PATH = '../';
 
-const bluebird = require( 'bluebird' );
+const {
+    
+    constants: {
 
-const { getDirectories } = require( './utils' ); 
+        TEMPORARY_TEST_FILES
+    }
+
+} = require( '../utils' ); 
 
 const execa = require( 'execa' );
 
-const TEMPORARY_TEST_FILES = 'temporary_test_files';
 
+module.exports = ({ directory }) => {
 
-describe( 'Modules Test', function() {
-
-    this.timeout( Infinity );
-
-    before( function() {
-
-        console.log( 'removing existing temporary test files' );
-
-        return execa(
+    const testDirectory = (
         
-            'rm', 
-
-            [
-                '-rf',
-                TEMPORARY_TEST_FILES,
-            ],
-
-            {
-                cwd: `${ process.cwd() }/test`
-            }
-        
-        ).then( () => {
-
-            console.log(
-                
-                'successfully removed existing temporary test files'
-            );
-        });
-    });
-
-    it( 'Each React module passes test', function() {
-
-        return getDirectories({ path: 'React' }).then( reactDirectories => {
-
-            return bluebird.mapSeries(
-
-                reactDirectories,
-
-                directory => testReactDirectory({ directory })
-            );
-
-        }).then( testResults => {
-
-            console.log( 'Results:', JSON.stringify( testResults, null, 4 ) );
-
-            const errorDirectories = testResults.filter(
-                
-                result => !!result.error
-
-            ).map(
-                
-                errorResult => errorResult.directory
-            );
-
-            if( errorDirectories.length > 0 ) {
-
-                throw new Error(
-                    
-                    'React libraries that failed the test: ' +
-                    JSON.stringify( errorDirectories )
-                );
-            }
-        });
-    });
-});
-
-
-const testReactDirectory = ({ directory }) => {
-
-    const testDirectory = `test/${ TEMPORARY_TEST_FILES }/${ directory }/`;
+        `test/${ TEMPORARY_TEST_FILES }/React/${ directory }/`
+    );
 
     const fullTestDirectoryPath = `${ process.cwd() }/${ testDirectory }`;
 
