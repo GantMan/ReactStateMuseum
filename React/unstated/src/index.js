@@ -29,21 +29,6 @@ export default class App extends Component {
     };
   }
 
-  addItem = () => {
-    this.setState(state => ({
-      allItems: [...state.allItems, state.newItemName],
-      newItemName: ""
-    }));
-  };
-
-  setNewItemName = event => {
-    this.setState({ newItemName: event.target.value });
-  };
-
-  clear = () => {
-    this.setState({ allItems: [] });
-  };
-
   render() {
     return (
       <Provider>
