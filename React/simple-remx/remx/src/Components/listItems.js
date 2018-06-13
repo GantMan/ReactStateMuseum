@@ -1,9 +1,11 @@
 import { SimpleList } from "packlist-components";
 import { connect } from "remx";
 
+import { store } from '../remx/store';
+
 function mapStateToProps(ownProps) {
   return {
-    value: ownProps.store.getItems()
+    value: store.getItems()
   };
 }
 

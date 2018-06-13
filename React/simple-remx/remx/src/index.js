@@ -11,10 +11,6 @@ import { render } from "react-dom";
 import AddItems from "./Components/addItem";
 import ListItems from "./Components/listItems";
 
-import { Store } from './remx/store';
-
-const store = new Store();
-
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
@@ -25,8 +21,8 @@ export default class App extends Component {
     return (
       <div style={styles}>
         <h2>Welcome to remx</h2>
-        <AddItems store={store} />
-        <ListItems store={store} />
+        <AddItems />
+        <ListItems />
       </div>
     );
   }

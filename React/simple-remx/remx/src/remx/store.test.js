@@ -1,10 +1,9 @@
-import { Store } from './store';
-
 describe(`remx store is easily testable (and TDD-able)`, () => {
   let store;
 
   beforeEach(() => {
-    store = new Store();
+    jest.resetModules();
+    store = require('./store').store;
   });
 
   it('start with 3 default items', () => {
