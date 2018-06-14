@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import { SimpleList } from "packlist-components";
-import { Consumer } from "../store";
+import { ItemsContainer } from "../container";
 
 export default class ListItems extends Component {
   render() {
-    return <SimpleList value={this.props.allItems} />;
+    return (
+      <ItemsContainer>
+        {({ allItems }) => <SimpleList value={allItems} />}
+      </ItemsContainer>
+    );
   }
 }
