@@ -5,8 +5,10 @@ import { ItemsContainer } from "../container";
 export default class ListItems extends Component {
   render() {
     return (
-      <ItemsContainer>
-        {({ allItems }) => <SimpleList value={allItems} />}
+      <ItemsContainer context="items">
+        {/* Danger! "allItems" is undefined in mounting...
+          And it means FATAL ERROR! */}
+        {({ allItems = [] }) => <SimpleList value={allItems} />}
       </ItemsContainer>
     );
   }

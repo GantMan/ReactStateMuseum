@@ -20,7 +20,7 @@ const styles = {
 render(
   <Provider>
     <div style={styles}>
-      <h2>Welcome to React Copy Write!</h2>
+      <h2>Welcome to React Constate!</h2>
       <AddItem />
       <ListItems />
     </div>

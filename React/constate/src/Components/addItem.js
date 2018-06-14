@@ -3,7 +3,7 @@ import { AddPackingItem } from "packlist-components";
 import { ItemsContainer } from "../container";
 
 export default () => (
-  <ItemsContainer>
+  <ItemsContainer context="items">
     {({ newItem, addItem, clearItems, setNewItemText }) => (
       <AddPackingItem
         addItem={addItem}
