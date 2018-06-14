@@ -1,7 +1,7 @@
 {
   "name": "constate-rsm",
   "version": "1.0.0",
-  "description": "React State Museum - Example of Constate management using react-easy-state",
+  "description": "React State Museum - Example of State management using constate",
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {
