@@ -18,7 +18,7 @@ const styles = {
 };
 
 render(
-  <Provider>
+  <Provider devtools>
     <div style={styles}>
       <h2>Welcome to React Constate!</h2>
       <AddItem />
