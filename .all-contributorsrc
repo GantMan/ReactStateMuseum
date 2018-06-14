@@ -146,6 +146,17 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "DanielZlotin",
+      "name": "Daniel Zlotin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6660239?v=4",
+      "profile": "https://github.com/DanielZlotin",
+      "contributions": [
+        "code",
+        "example",
+        "test"
+      ]
     }
   ]
 }
