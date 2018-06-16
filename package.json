@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/mocha/bin/_mocha ./test/index.js",
+    "test:all": "node_modules/mocha/bin/_mocha ./test/index.js --exhaustive",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "contributors:check": "all-contributors check"
