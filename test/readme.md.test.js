@@ -9,7 +9,7 @@ const path = require('path')
 const GITHUB_URL = 'https://github.com/GantMan/ReactStateMuseum'
 
 describe('README.md Tests', function () {
-  it('has readme files in each example', function () {
+  it('Each example has a README.md', function () {
     return bluebird.props({
       reactDirectories: getDirectories({ path: 'React' }),
       reactNativeDirectories: getDirectories({ path: 'ReactNative' })
