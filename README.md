@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/logo/Locotype%20vertical.png?raw=true" width="300">
+  <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/logo/Locotype%20vertical.png?raw=true" width="300">
   <hr/>
 </p>
 
