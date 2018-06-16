@@ -157,6 +157,15 @@
         "example",
         "test"
       ]
+    },
+    {
+      "login": "nunojesus",
+      "name": "Nuno Jesus",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/34600369?v=4",
+      "profile": "https://github.com/nunojesus",
+      "contributions": [
+        "design"
+      ]
     }
   ]
 }
