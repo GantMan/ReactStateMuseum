@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node_modules/mocha/bin/_mocha ./test/index.js",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "contributors:check": "all-contributors check"
   },
   "directories": {
     "test": "test"
