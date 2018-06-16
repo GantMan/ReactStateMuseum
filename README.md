@@ -1,9 +1,5 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/34600369/41499575-2a9f989a-717a-11e8-89ef-d4d16c9dc1ea.png" width="700">
-
-<p align="center">
-  <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/rs_small.png?raw=true" width="300" />
-  <h3 align="center">The React State Museum</h3>
+  <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/logo/Locotype%20vertical.png?raw=true" width="300">
   <hr/>
 </p>
 
@@ -48,10 +44,12 @@ Look at the code for yourself, _OR_ check this blog post on the findings.
 **To Run Native**
 * Clone this repo, then `cd` into each folder and follow the directions in readme
 
-
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+<p align="center">
+    <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/rs_small.png?raw=true" width="300" />
+    <H3>Special thanks to all the wonderful people who contributed in some way to the React State Museum</H3>
+</p>
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
