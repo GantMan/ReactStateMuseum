@@ -1,4 +1,7 @@
 <p align="center">
+<img src="https://user-images.githubusercontent.com/34600369/41499575-2a9f989a-717a-11e8-89ef-d4d16c9dc1ea.png" width="700">
+
+<p align="center">
   <img src="https://github.com/GantMan/ReactStateMuseum/blob/master/_art/rs_small.png?raw=true" width="300" />
   <h3 align="center">The React State Museum</h3>
   <hr/>
