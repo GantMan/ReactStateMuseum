@@ -134,7 +134,9 @@
       "contributions": [
         "code",
         "doc",
-        "example"
+        "example",
+        "blog",
+        "test"
       ]
     },
     {

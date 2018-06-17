@@ -1,107 +1,116 @@
-'use strict';
+'use strict'
 /* jshint expr: true */
-const ROOT_PATH = '../';
+const ROOT_PATH = '../'
 
-const bluebird = require( 'bluebird' );
+const bluebird = require('bluebird')
+const { getDirectories } = require('./utils')
+const { readFile, existsSync } = require('fs')
+const path = require('path')
+const GITHUB_URL = 'https://github.com/GantMan/ReactStateMuseum'
 
-const { getDirectories } = require( './utils' );
+describe('README.md Tests', function () {
+  it('Each example has a README.md', function () {
+    return bluebird.props({
+      reactDirectories: getDirectories({ path: 'React' }),
+      reactNativeDirectories: getDirectories({ path: 'ReactNative' })
+    }).then(({
+        reactDirectories,
+        reactNativeDirectories
+    }) => {
+      const missingReadmes = []
+      for (const reactDirectory of reactDirectories) {
 
-const { readFile } = require( 'fs' );
+        // const readmePath = `${__dirname}/${ROOT_PATH}React/${reactDirectory}/README.md`
+        const readmePath = path.join(__dirname, ROOT_PATH, 'React', reactDirectory, 'README.md')
+        if (!existsSync(readmePath)) {
+          missingReadmes.push(readmePath)
+        }
+      }
 
-const GITHUB_URL = "https://github.com/GantMan/ReactStateMuseum";
+      for (const reactNativeDirectory of reactNativeDirectories) {
+        // const readmePath = `${__dirname}/${ROOT_PATH}ReactNative/${reactNativeDirectory}/README.md`
+        const readmePath = path.join(__dirname, ROOT_PATH, 'ReactNative', reactNativeDirectory, 'README.md')
 
+        if (!existsSync(readmePath)) {
+          missingReadmes.push(readmePath)
+        }
+      }
 
-describe( 'README.md Tests', function() {
+      if (missingReadmes.length > 0) {
+        const errorMessage = (
+          'The following projects are missing README.md files:' +
+          JSON.stringify(missingReadmes) +
+          '.'
+        )
 
-    it( 'Each folder has a link to it in the readme', function() {
+        throw new Error(errorMessage)
+      }
+    })
+  })
 
-        return bluebird.props({
-            
-            readme: getReadme(),
-            reactDirectories: getDirectories({ path: 'React' }),
-            reactNativeDirectories: getDirectories({ path: 'ReactNative' }),
-            
-        }).then( ({
+  it('Each folder has a link to it in the readme', function () {
+    return bluebird.props({
+      readme: getReadme(),
+      reactDirectories: getDirectories({ path: 'React' }),
+      reactNativeDirectories: getDirectories({ path: 'ReactNative' })
+    }).then(({
+        readme,
+        reactDirectories,
+        reactNativeDirectories
+      }) => {
+      const missingReactLinks = []
+      for (const reactDirectory of reactDirectories) {
+        const linkToDirectory = (
+          `${GITHUB_URL}/tree/master/React/${reactDirectory}`
+        )
 
-            readme,
-            reactDirectories,
-            reactNativeDirectories
+        if (!readme.includes(linkToDirectory)) {
+          missingReactLinks.push(linkToDirectory)
+        }
+      }
 
-        }) => {
+      const missingReactNativeLinks = []
+      for (const reactNativeDirectory of reactNativeDirectories) {
+        const linkToDirectory = (
+          `${GITHUB_URL}/tree/master/` +
+          `ReactNative/${reactNativeDirectory}`
+        )
 
-            const missingReactLinks = [];
+        if (!readme.includes(linkToDirectory)) {
+          missingReactNativeLinks.push(linkToDirectory)
+        }
+      }
 
-            for( const reactDirectory of reactDirectories ) {
+      if (
+        (missingReactLinks.length > 0) ||
+        (missingReactNativeLinks.length > 0)
+      ) {
+        const errorMessage = (
+          'Missing React links:' +
+          JSON.stringify(missingReactLinks) +
+          ', missing React Native links:' +
+          JSON.stringify(missingReactNativeLinks) +
+          '.'
+        )
 
-                const linkToDirectory = (
-
-                    `${ GITHUB_URL }/tree/master/React/${ reactDirectory }`
-                );
-
-                if( !readme.includes( linkToDirectory ) ) {
-                    
-                    missingReactLinks.push( linkToDirectory );
-                }
-            }
-
-            const missingReactNativeLinks = [];
-
-            for( const reactNativeDirectory of reactNativeDirectories ) {
-
-                const linkToDirectory = (
-
-                    `${ GITHUB_URL }/tree/master/` +
-                    `ReactNative/${ reactNativeDirectory }`
-                );
-
-                if( !readme.includes( linkToDirectory ) ) {
-                    
-                    missingReactNativeLinks.push( linkToDirectory );
-                }
-            }
-
-            if(
-                (missingReactLinks.length > 0) ||
-                (missingReactNativeLinks.length > 0)
-            ) {
-
-                const errorMessage = (
-                    
-                    'Missing React links:' +
-                    JSON.stringify( missingReactLinks ) +
-                    ', missing React Native links:' +
-                    JSON.stringify( missingReactNativeLinks ) +
-                    '.'
-                );
-
-                throw new Error( errorMessage );
-            }
-        });
-    });
-});
-
+        throw new Error(errorMessage)
+      }
+    })
+  })
+})
 
 // helper functions
 const getReadme = () => {
-
-    const readmePath = `${ __dirname }/${ ROOT_PATH }/README.md`;
-
-    return new Promise( ( resolve, reject ) => {
-
-        readFile( readmePath, ( err, data ) => {
-
-            if( !!err ) {
-
-                return reject( err );
+  const readmePath = `${__dirname}/${ROOT_PATH}/README.md`
+    return new Promise((resolve, reject) => {
+      readFile(readmePath, (err, data) => {
+          if (err) {
+              return reject(err)
             }
-
-            resolve( data );
-        });
-
-    }).then( readmeAsBuffer => {
-
-        const readme = readmeAsBuffer.toString( 'ascii' );
-
-        return readme;
-    });
+          resolve(data)
+        })
+    }).then(readmeAsBuffer => {
+      const readme = readmeAsBuffer.toString('ascii')
+        return readme
+    })
 };
