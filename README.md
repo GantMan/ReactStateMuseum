@@ -44,12 +44,11 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 ## What are the differences?
 
 <details>
-<summary><strong>The honest truth</strong></summary>
+<summary><strong><em>Ye honest truth here</em></strong></summary>
 <img src="https://user-images.githubusercontent.com/997157/40189816-f23c5b10-59c2-11e8-96b1-fcfb0ca51d4a.png" />
 </details>
 
-
-Look at the code for yourself, _OR_ check this blog post on my findings.
+This repo exists so you can look at the code for yourself, _OR_ check this blog post on my findings if you'd like:
 > https://hackernoon.com/the-react-state-museum-a278c726315
 
 **To Run Web**
