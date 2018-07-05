@@ -1,0 +1,22 @@
+{
+  "name": "react-simplified-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of react-simplified",
+  "keywords": [
+    "react state museum",
+    "react-simplified"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "packlist-components": "^1.2.0",
+    "react-scripts": "^1.1.4",
+    "react-simplified": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

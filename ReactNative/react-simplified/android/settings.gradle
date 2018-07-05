@@ -1,0 +1,3 @@
+rootProject.name = 'react-simplified-example'
+
+include ':app'
