@@ -16,9 +16,11 @@ export default class App extends Component {
   }
 
   addItem = (store, items) => {
-    store.writeData({
-      data: { allItems: items.concat(this.state.newItemName)}
-    })
+    const newItem = this.state.newItemName;
+    this.setState({ newItemName: '' }, () =>
+      store.writeData({
+        data: { allItems: items.concat(newItem) }
+    }))
   }
 
   clear = (store) => {
