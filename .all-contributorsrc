@@ -168,6 +168,16 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "amerani",
+      "name": "Alek Merani",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22307334?v=4",
+      "profile": "http://alek.in",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
