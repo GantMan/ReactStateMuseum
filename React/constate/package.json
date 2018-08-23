@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {
-    "constate": "^0.6.0",
+    "constate": "0.8.0",
     "packlist-components": "^1.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
