@@ -138,4 +138,4 @@ class App extends Component {
 render(<App />, document.getElementById("root"));
 ```
 
-Please, dont keep all your code inside onu file. Use an "store" folder for clean code.
+Please, dont keep all your code inside one file. Use an "store" folder for clean code.
