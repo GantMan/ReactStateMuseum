@@ -1,4 +1,8 @@
 {
+  "name": "reim-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of State management using reim",
+  "main": "src/index.js",
   "private": true,
   "scripts": {
     "build": "pwa export",
