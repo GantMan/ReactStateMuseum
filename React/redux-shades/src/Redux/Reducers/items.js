@@ -1,3 +1,4 @@
+import * as shades from 'shades';
 import { ItemsActions } from "../Actions/items";
 
 // shape is an empty array
@@ -9,21 +10,14 @@ const INITIAL_STATE = {
 export function reducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case ItemsActions.ADD_ITEM:
-      return {
-        ...state,
-        myItems: [...state.myItems, state.newItemName],
-        newItemName: ""
-      };
+      return shades.updateAll(
+        shades.mod('myItems')(shades.push(state.newItemName)),
+        shades.set('newItemName')('')
+      )(state);
     case ItemsActions.CLEAR:
-      return {
-        ...state,
-        myItems: []
-      };
+      return shades.set('myItems')([])(state);
     case ItemsActions.SET_NEW_ITEM_NAME:
-      return {
-        ...state,
-        newItemName: action.value
-      };
+      return shades.set('newItemName')(action.value)(state);
     default:
       return state;
   }
