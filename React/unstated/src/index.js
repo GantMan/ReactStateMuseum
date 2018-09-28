@@ -18,17 +18,6 @@ const styles = {
 };
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      allItems: ["nachos", "burritos", "hot dog"],
-      newItemName: "",
-      addItem: this.addItem,
-      setNewItemName: this.setNewItemName,
-      clear: this.clear
-    };
-  }
-
   render() {
     return (
       <Provider>
