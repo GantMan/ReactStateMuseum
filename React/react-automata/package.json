@@ -6,10 +6,11 @@
   "main": "src/index.js",
   "dependencies": {
     "packlist-components": "1.2.0",
-    "react": "16.3.2",
-    "react-automata": "^3.0.0",
-    "react-dom": "16.3.2",
-    "react-scripts": "1.1.4"
+    "react": "16.5.2",
+    "react-automata": "^4.0.4",
+    "react-dom": "16.5.2",
+    "react-scripts": "2.0.4",
+    "react-test-renderer": "^16.5.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -17,5 +18,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
