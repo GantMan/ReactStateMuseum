@@ -1,5 +1,6 @@
 const isEmpty = ({ value }) => value === "";
 const isNotEmpty = state => !isEmpty(state);
+const isTrue = () => true;
 
 export default {
   initial: "idle",
@@ -8,7 +9,8 @@ export default {
       on: {
         CLEAR: {
           idle: {
-            actions: ["clear"]
+            actions: ["clear"],
+            cond: isTrue
           }
         },
         SET_NEW_ITEM_NAME: {
@@ -27,8 +29,9 @@ export default {
         },
         CLEAR: {
           loaded: {
-            actions: ["clear"]
-          }
+            actions: ["clear"],
+            cond: isTrue
+          },
         },
         SET_NEW_ITEM_NAME: {
           loaded: {

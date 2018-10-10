@@ -8,7 +8,7 @@
  ************************************************/
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { State, withStateMachine } from "react-automata/dist/react-automata";
+import { State, withStateMachine } from "react-automata";
 import statechart from "./Statecharts/index";
 import ListItems from "./Components/listItems";
 import AddItems from "./Components/addItem";
@@ -46,7 +46,7 @@ export class App extends Component {
   handleSetNewItemName = event => {
     this.props.transition("SET_NEW_ITEM_NAME", { value: event.target.value });
   };
-  handleClear = () => this.props.transition("CLEAR");
+  handleClear = () => this.props.transition("CLEAR", true);
 
   render() {
     return (
