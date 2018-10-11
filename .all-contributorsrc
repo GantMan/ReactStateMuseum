@@ -206,6 +206,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "kriswep",
+      "name": "Christoph Benjamin Weber",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8836059?v=4",
+      "profile": "https://wetainment.com",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ]
 }
