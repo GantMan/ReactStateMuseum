@@ -8,7 +8,7 @@
  ************************************************/
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { State, withStatechart } from "react-automata";
+import { State, withStateMachine } from "react-automata";
 import statechart from "./Statecharts/index";
 import ListItems from "./Components/listItems";
 import AddItems from "./Components/addItem";
@@ -46,14 +46,14 @@ export class App extends Component {
   handleSetNewItemName = event => {
     this.props.transition("SET_NEW_ITEM_NAME", { value: event.target.value });
   };
-  handleClear = () => this.props.transition("CLEAR");
+  handleClear = () => this.props.transition("CLEAR", true);
 
   render() {
     return (
       <div style={styles}>
         <h2>Welcome to setState + react-automata</h2>
-        <State value="idle">Current State 'idle'</State>
-        <State value="loaded">Current State 'loaded'</State>
+        <State is="idle">Current State 'idle'</State>
+        <State is="loaded">Current State 'loaded'</State>
         <AddItems
           addItem={this.handAddItem}
           setNewItemText={this.handleSetNewItemName}
@@ -66,7 +66,7 @@ export class App extends Component {
   }
 }
 
-const WrappedWithChart = withStatechart(statechart)(App);
+const WrappedWithChart = withStateMachine(statechart)(App);
 export default WrappedWithChart;
 
 render(<WrappedWithChart />, document.getElementById("root"));
