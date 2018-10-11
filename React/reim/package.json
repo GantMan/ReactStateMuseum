@@ -1,0 +1,25 @@
+{
+  "name": "reim-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of State management using reim",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "build": "pwa export",
+    "start": "sirv build -s",
+    "watch": "pwa watch"
+  },
+  "dependencies": {
+    "ganalytics": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-reim": "^1.10.5",
+    "reim": "^1.10.4",
+    "sirv-cli": "latest",
+    "usthing-ui": "^1.0.1"
+  },
+  "devDependencies": {
+    "@pwa/cli": "latest",
+    "@pwa/preset-react": "latest"
+  }
+}
