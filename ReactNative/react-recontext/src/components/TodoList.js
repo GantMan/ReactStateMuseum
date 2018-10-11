@@ -5,13 +5,8 @@ import Todo from "./Todo";
 import AddTodo from "./AddTodo";
 
 class TodoList extends React.PureComponent {
-  handlePress = () => {
-    console.log("pressed");
-  };
-
   render() {
     const { todos } = this.props;
-    console.log(todos);
     return (
       <FlatList
         data={todos}
