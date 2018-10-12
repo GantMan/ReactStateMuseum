@@ -21,10 +21,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       allItems: ["nachos", "burritos", "hot dog"],
-      newItemName: "",
-      addItem: this.addItem,
-      setNewItemName: this.setNewItemName,
-      clear: this.clear
+      newItemName: ""
     };
   }
 
