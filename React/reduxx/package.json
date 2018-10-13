@@ -12,7 +12,7 @@
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-scripts": "1.1.4",
-    "reduxx": "11"
+    "reduxx": "13"
   },
   "devDependencies": {},
   "scripts": {
