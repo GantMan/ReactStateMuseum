@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ScrollViewMock
+  contentContainerStyle={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+  keyboardShouldPersistTaps="always"
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 20,
+        "margin": 10,
+        "textAlign": "center",
+      }
+    }
+  >
+    Welcome to immer
+  </Text>
+  <AddItems
+    addItem={[Function]}
+    clear={[Function]}
+    newItemName=""
+    setNewItemName={[Function]}
+  />
+  <AddItems
+    allItems={
+      Array [
+        "nachos",
+        "burritos",
+        "hot dog",
+      ]
+    }
+  />
+</ScrollViewMock>
+`;
