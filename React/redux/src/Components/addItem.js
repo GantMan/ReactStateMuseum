@@ -6,10 +6,10 @@ const mapStateToProps = state => ({ value: state.items.newItemName });
 
 const { setNewItemName, addItem, clear } = ItemActionCreators;
 
-const mapDispathToProps = {
+const mapDispatchToProps = {
   setNewItemText: e => setNewItemName(e.target.value),
   addItem,
   clear
 };
 
-export default connect(mapStateToProps, mapDispathToProps)(AddPackingItem);
+export default connect(mapStateToProps, mapDispatchToProps)(AddPackingItem);
