@@ -1,15 +1,14 @@
 {
   "name": "apollo-link-state-rsm",
   "version": "1.0.0",
-  "description":
-    "React State Museum - Example of Apollo Link State + Native setState",
+  "description": "React State Museum - Example of Apollo Link State + Native setState",
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {
     "apollo-boost": "^0.1.6",
     "graphql": "^0.13.2",
     "react": "^16.3.2",
-    "react-apollo": "^2.1.0-beta.3",
+    "react-apollo": "^2.2.4",
     "react-dom": "^16.3.2",
     "react-scripts": "^1.1.4"
   },
