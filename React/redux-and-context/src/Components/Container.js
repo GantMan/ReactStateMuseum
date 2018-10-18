@@ -22,6 +22,14 @@ import AddItems from "./addItem";
     }
   }
 
+  componentDidUpdate(prevProps) {
+    if ( prevProps.myItems !== this.props.myItems ) {
+      this.setState({
+        myItems: this.props.myItems
+      })
+    }
+  }
+
   render() {
     return (
       <ContainerContext.Provider value={{...this.state}}>
