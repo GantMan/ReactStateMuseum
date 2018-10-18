@@ -1,6 +1,13 @@
+import React from 'react';
 import { SimpleList } from "packlist-components";
-import { connect } from "react-redux";
+import ContainerContext from '../Context/ContainerContext'
 
-const mapStateToProps = state => ({ value: state.items.myItems });
+const ListItems = () => (
+  <ContainerContext.Consumer>
+    {({ myItems }) => (
+      <SimpleList value={myItems} />
+    )}
+  </ContainerContext.Consumer>
+)
 
-export default connect(mapStateToProps)(SimpleList);
+export default ListItems;

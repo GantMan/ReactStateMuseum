@@ -8,8 +8,7 @@
  ************************************************/
 import React, { Component } from "react";
 import { render } from "react-dom";
-import ListItems from "./Components/listItems";
-import AddItems from "./Components/addItem";
+import Container from "./Components/Container";
 import { Provider } from "react-redux";
 import configureStore from "./Redux/Store/configureStore";
 const store = configureStore();
@@ -25,8 +24,7 @@ export default class App extends Component {
       <Provider store={store}>
         <div style={styles}>
           <h2>Welcome to Redux + Context</h2>
-          <AddItems />
-          <ListItems />
+          <Container />
         </div>
       </Provider>
     );
