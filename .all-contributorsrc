@@ -288,6 +288,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Kaivosukeltaja",
+      "name": "Niko Salminen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/881135?v=4",
+      "profile": "http://nikosalminen.com",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
