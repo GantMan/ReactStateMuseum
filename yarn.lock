@@ -216,6 +216,10 @@ decamelize@^2.0.0:
   dependencies:
     xregexp "4.0.0"
 
+deep-diff@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/deep-diff/-/deep-diff-1.0.2.tgz#afd3d1f749115be965e89c63edc7abb1506b9c26"
+
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
@@ -903,6 +907,12 @@ supports-color@5.4.0, supports-color@^5.3.0:
 through@^2.3.6:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+
+tiny-atom@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/tiny-atom/-/tiny-atom-3.4.0.tgz#18b427ddf541d1f3d7af78a1cacdeb4f19b101d7"
+  dependencies:
+    deep-diff "^1.0.2"
 
 tmp@^0.0.33:
   version "0.0.33"
