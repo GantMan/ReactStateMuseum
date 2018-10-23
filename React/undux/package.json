@@ -2,9 +2,12 @@
     "name": "undux-rsm",
     "version": "1.0.0",
     "description": "React State Museum - Example of State management using undux",
+    "keywords": [
+        "react state museum",
+        "undux"
+    ],
     "main": "src/index.js",
     "license": "MIT",
-    "private": true,
     "scripts": {
         "build": "parcel build src/index.html",
         "start": "sirv build -s",
