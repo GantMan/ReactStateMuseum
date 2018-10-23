@@ -1,10 +1,14 @@
 {
-    "name": "undux-rsm",
+    "name": "recomponent-rsm",
     "version": "1.0.0",
     "description": "React State Museum - Example of State management using undux",
     "main": "src/index.js",
     "license": "MIT",
-    "private": true,
+    "keywords": [
+        "react state museum",
+        "react-recomponent",
+        "recomponent"
+    ],
     "scripts": {
         "build": "parcel build src/index.html",
         "start": "sirv build -s",
