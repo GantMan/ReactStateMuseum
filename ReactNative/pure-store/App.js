@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, ScrollView } from 'react-native'
-import { SimpleList, AddPackingItem } from 'packlist-components/native'
 import createStore from "pure-store"
+import AddItem from "./Components/AddItem";
+import ListItems from "./Components/ListItems";
 
-
-const store = createStore({
+export const store = createStore({
   allItems: ["nachos", "burritos", "hot dog"],
   newItemName: ""
 })
@@ -15,16 +15,6 @@ export default class App extends Component {
     store.subscribe(()=> this.forceUpdate())
   }
 
-  addItem = ()=> {
-    store.update(state=> {
-      state.allItems.push(state.newItemName)
-      state.newItemName = ""
-    })
-  }
-
-  setName = n => store.update({ newItemName: n })
-  clear   = ()=> store.update({ allItems: [] })
-
   render = ()=> (
     <ScrollView
       contentContainerStyle={styles.container}
@@ -33,15 +23,8 @@ export default class App extends Component {
       <Text style={styles.welcome}>
         Welcome to pure-store
       </Text>
-      <AddPackingItem
-        value={store.state.newItemName}
-        addItem={this.addItem}
-        setNewItemText={this.setName}
-        clear={this.clear}
-      />
-      <SimpleList
-        value={store.state.allItems}
-      />
+      <AddItem />
+      <ListItems />
     </ScrollView>
   )
 }

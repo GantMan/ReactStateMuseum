@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.5.0",
     "react-native": "0.57.2",
-    "react-recontext": "^2.0.6"
+    "react-recontext": "3.0.1"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
