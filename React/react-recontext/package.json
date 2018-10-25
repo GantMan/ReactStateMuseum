@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-recontext": "2.0.6",
+    "react-recontext": "3.0.1",
     "react-scripts": "2.0.3"
   },
   "devDependencies": {},

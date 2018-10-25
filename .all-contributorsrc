@@ -279,6 +279,24 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "chimon2000",
+      "name": "Ryan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6907797?v=4",
+      "profile": "https://github.com/chimon2000",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Kaivosukeltaja",
+      "name": "Niko Salminen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/881135?v=4",
+      "profile": "http://nikosalminen.com",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
