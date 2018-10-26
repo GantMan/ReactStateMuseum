@@ -36,5 +36,7 @@
     "mocha": "^5.2.0",
     "updtr": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tiny-atom": "^3.4.0"
+  }
 }

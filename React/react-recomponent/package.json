@@ -1,0 +1,32 @@
+{
+    "name": "recomponent-rsm",
+    "version": "1.0.0",
+    "description": "React State Museum - Example of State management using undux",
+    "main": "src/index.js",
+    "license": "MIT",
+    "keywords": [
+        "react state museum",
+        "react-recomponent",
+        "recomponent"
+    ],
+    "scripts": {
+        "build": "parcel build src/index.html",
+        "start": "sirv build -s",
+        "watch": "parcel src/index.html"
+    },
+    "dependencies": {
+        "immutable": "^3.8.2",
+        "react": "^16.5.2",
+        "react-dom": "^16.5.2",
+        "react-recomponent": "^0.2.0",
+        "sirv-cli": "latest",
+        "usthing-ui": "^1.3.1-patch2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.2",
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "parcel-bundler": "^1.10.3"
+    }
+}
