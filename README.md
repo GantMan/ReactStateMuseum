@@ -38,7 +38,6 @@
 | [React 16.x Context](https://reactjs.org/docs/context.html) + [Redux](https://github.com/reactjs/react-redux)                       | [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/redux-and-context) |                Coming Soon - Contribute Here?                |
 | [ReComponent](https://github.com/philipp-spiess/react-recomponent)                       | [<img src="./_art/csb.png" width="40px" />](https://codesandbox.io/s/github/GantMan/ReactStateMuseum/tree/master/React/react-recomponent) [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/react-recomponent) |                Coming Soon - Contribute Here?                |
 | [undux](https://github.com/bcherny/undux)                       | [<img src="./_art/csb.png" width="40px" />](https://codesandbox.io/s/github/GantMan/ReactStateMuseum/tree/master/React/undux) [<img src="./_art/octo.png" width="36px" />](https://github.com/GantMan/ReactStateMuseum/tree/master/React/undux) |                Coming Soon - Contribute Here?                |
->>>>>>> a6e8515d2f7bc8daf437fd43072128ad6467a57d
 
 ### Examples to help portray the how, why, which, pros, and cons of various state management systems in the React ecosystem.
 
