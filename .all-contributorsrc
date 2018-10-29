@@ -297,6 +297,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jchiatt",
+      "name": "J.C. Hiatt",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2353845?v=4",
+      "profile": "https://jchiatt.com",
+      "contributions": [
+        "example"
+      ]
     }
   ]
 }
