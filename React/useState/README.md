@@ -3,3 +3,4 @@ If you use yarn, run:
 
 If you use npm, run:
 `npm i && npm run start`
+`
