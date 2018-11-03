@@ -1,0 +1,20 @@
+{
+  "name": "useState-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of useState",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "packlist-components": "1.2.0",
+    "react": "16.7.0-alpha.0",
+    "react-dom": "16.7.0-alpha.0",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
