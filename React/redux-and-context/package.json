@@ -1,0 +1,24 @@
+{
+  "name": "redux-and-context-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of Redux + Context Together",
+  "keywords": [
+    "react state museum",
+    "redux",
+    "context",
+    "react"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "packlist-components": "^1.2.0",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start"
+  }
+}
