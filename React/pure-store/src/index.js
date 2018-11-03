@@ -8,11 +8,11 @@
  ************************************************/
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { SimpleList, AddPackingItem } from "packlist-components";
 import createStore from "pure-store";
+import AddItem from "./Components/AddItem";
+import ListItems from "./Components/ListItems";
 
-
-const store = createStore({
+export const store = createStore({
   allItems: ["nachos", "burritos", "hot dog"],
   newItemName: ""
 });
@@ -22,30 +22,13 @@ const styles = {
   textAlign: "center"
 };
 
-export default class App extends Component {
-  addItem = () => {
-    store.update(state => {
-      state.allItems.push(state.newItemName)
-      state.newItemName = ""
-    });
-  };
-
-  setName = e => store.update({ newItemName: e.target.value });
-  clear   = ()=> store.update({ allItems: [] });
-
+export default class App extends Component {  
   render() {
     return (
       <div style={styles}>
         <h2>Welcome to pure-store</h2>
-
-        <AddPackingItem
-          addItem={this.addItem}
-          setNewItemText={this.setName}
-          value={store.state.newItemName}
-          clear={this.clear}
-        />
-
-        <SimpleList value={store.state.allItems} />
+        <AddItem />
+        <ListItems />
       </div>
     );
   }
