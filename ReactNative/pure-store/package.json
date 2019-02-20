@@ -3,26 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest-expo": "~27.0.0",
+    "jest-expo": "^32.0.0",
     "react-native-scripts": "1.14.0",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.6.3"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo --android",
+    "ios": "expo --ios",
     "test": "jest"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^27.0.1",
+    "expo": "^32.0.0",
     "packlist-components": "^1.2.0",
     "pure-store": "^0.3.2",
-    "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
   }
 }
