@@ -39,7 +39,7 @@ export default class App extends Component {
     setState('allItems', [])
   }
 
-  render () {
+  render = () => {
     const value = getState('newItemName')
     const allItems = getState('allItems')
     return (
