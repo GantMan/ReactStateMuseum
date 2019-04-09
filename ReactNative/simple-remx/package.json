@@ -10,14 +10,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "expo": "^30.0.1",
+    "expo": "^32.0.0",
     "packlist-components": "^1.2.0",
-    "react": "16.3.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "remx": "^2.0.51"
   },
   "devDependencies": {
-    "jest-expo": "^30.0.0"
+    "jest-expo": "^32.0.0"
   },
   "jest": {
     "preset": "jest-expo",
