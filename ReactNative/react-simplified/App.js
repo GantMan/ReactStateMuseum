@@ -25,7 +25,7 @@ export default class App extends Component {
   render() {
     return (
       <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="always">
-        <Text style={styles.welcome}>Welcome to setState</Text>
+        <Text style={styles.welcome}>Welcome to react-simplified</Text>
         <AddItems
           addItem={this.addItem}
           setNewItemName={this.setNewItemName}
