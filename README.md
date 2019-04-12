@@ -58,7 +58,8 @@ Every app is meant to be small, simple, and the same as each other.  The only di
 </details>
 
 This repo exists so you can look at the code for yourself, _OR_ check this blog post on my findings if you'd like:
-> https://hackernoon.com/the-react-state-museum-a278c726315
+* **Blog Post:** https://hackernoon.com/the-react-state-museum-a278c726315
+* **Video:** https://vimeo.com/298276409
 
 **To Run Web**
 * Click the codesandbox link in the list above
