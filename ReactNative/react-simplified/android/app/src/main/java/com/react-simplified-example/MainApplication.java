@@ -1,4 +1,4 @@
-package com.react-simplified-example;
+package com.reactSimplifiedExample;
 
 import android.app.Application;
 

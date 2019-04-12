@@ -1,4 +1,4 @@
-package com.react-simplified-example;
+package com.reactSimplifiedExample;
 
 import com.facebook.react.ReactActivity;
 

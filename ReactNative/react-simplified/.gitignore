@@ -54,6 +54,3 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
-
-.vscode/
-!.vscode/cSpell.json
