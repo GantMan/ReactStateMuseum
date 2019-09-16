@@ -314,6 +314,15 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "mpaarating",
+      "name": "Alex Lewis",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4410245?v=4",
+      "profile": "http://blog.alexmlewis.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
