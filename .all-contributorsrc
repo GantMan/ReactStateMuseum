@@ -323,6 +323,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "StevenLangbroek",
+      "name": "Steven Langbroek",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/296796?v=4",
+      "profile": "https://twitter.com/stevendotjs",
+      "contributions": [
+        "bug"
+      ]
     }
   ]
 }
