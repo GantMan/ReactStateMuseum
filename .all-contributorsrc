@@ -10,17 +10,6 @@
   "commit": true,
   "contributors": [
     {
-      "login": "msteckyefantis",
-      "name": "Michael Stecky-Efantis",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/13184324?v=4",
-      "profile": "https://LessonShop.net",
-      "contributions": [
-        "code",
-        "example",
-        "test"
-      ]
-    },
-    {
       "login": "gunn",
       "name": "Arthur Gunn",
       "avatar_url": "https://avatars0.githubusercontent.com/u/42500?v=4",
