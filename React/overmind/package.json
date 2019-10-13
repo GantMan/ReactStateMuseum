@@ -1,0 +1,19 @@
+{
+  "name": "overmind",
+  "version": "0.1.0",
+  "description": "React State Museum - Example of Overmind",
+  "dependencies": {
+    "overmind": "^20.0.0",
+    "overmind-react": "^21.0.0",
+    "packlist-components": "1.2.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
