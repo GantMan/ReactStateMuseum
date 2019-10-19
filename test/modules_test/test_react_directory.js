@@ -2,13 +2,15 @@
 /* jshint expr: true */
 
 const {
-    
+
+    makeDirectoryCleanupFunction,
+
     constants: {
 
         TEMPORARY_TEST_FILES
     }
 
-} = require( '../utils' ); 
+} = require( '../utils' );
 
 const execa = require( 'execa' );
 
@@ -16,7 +18,7 @@ const execa = require( 'execa' );
 module.exports = ({ directory }) => {
 
     const testDirectory = (
-        
+
         `test/${ TEMPORARY_TEST_FILES }/React/${ directory }/`
     );
 
@@ -24,8 +26,10 @@ module.exports = ({ directory }) => {
 
     let stage = 'start';
 
+    const finallyRemoveTemporaryDirectory = makeDirectoryCleanupFunction(testDirectory);
+
     return execa(
-        
+
         'mkdir',
 
         [
@@ -38,24 +42,24 @@ module.exports = ({ directory }) => {
         stage = 'copy';
 
         return execa(
-        
+
             'cp',
-    
+
             [
                 '-a',
                 `React/${ directory }/.`,
                 testDirectory,
             ]
         );
-    
+
     }).then( () => {
 
         stage = 'yarn';
-        
+
         console.log( `running yarn in ${ testDirectory }` );
 
         return execa(
-        
+
             'yarn',
 
             [],
@@ -63,7 +67,7 @@ module.exports = ({ directory }) => {
             {
                 cwd: fullTestDirectoryPath
             }
-        );  
+        );
 
     }).then( () => {
 
@@ -72,7 +76,7 @@ module.exports = ({ directory }) => {
         console.log( `running yarn build in ${ testDirectory }` );
 
         return execa(
-        
+
             'yarn',
 
             [
@@ -82,7 +86,7 @@ module.exports = ({ directory }) => {
             {
                 cwd: fullTestDirectoryPath
             }
-        );  
+        );
 
     }).then( () => {
 
@@ -91,8 +95,8 @@ module.exports = ({ directory }) => {
         console.log( `running CI=true yarn test in ${ testDirectory }` );
 
         return execa(
-        
-            'yarn', 
+
+            'yarn',
 
             [
                 'test'
@@ -104,16 +108,16 @@ module.exports = ({ directory }) => {
                     CI: true
                 }
             }
-        );  
+        );
 
     }).then( () => {
-        
+
         stage = 'finish';
 
         console.log( `${ directory } passed test` );
-        
+
         return {
-    
+
             directory,
             passedTests: true,
             // data: result.stdout
@@ -124,10 +128,10 @@ module.exports = ({ directory }) => {
         console.log( `${ directory } failed test at stage: ${ stage }` );
 
         return {
-            
+
             passedTests: false,
             directory,
             error: err
         };
-    });
+    }).then(finallyRemoveTemporaryDirectory, finallyRemoveTemporaryDirectory);
 };
