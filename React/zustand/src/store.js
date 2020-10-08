@@ -1,21 +1,15 @@
-import { atom, useRecoilState } from "recoil";
+import create from "zustand";
 
-const items = atom({
-  key: "items",
-  default: ["nachos", "burritos", "hot dog"]
-});
+const useItemsStore = create((set) => ({
+  items: ["nachos", "burritos", "hot dog"],
+  addItem: (newItem) => set((state) => ({ items: [...state.items, newItem] })),
+  resetItems: () => set({ items: [] }),
+}));
 
-// clear
-const useResetItem = () => {
-  const [item, setItem] = useRecoilState(items);
-  return () => {
-    setItem([]);
-  };
-};
+const useUserInputStore = create((set) => ({
+  input: "",
+  setInput: (input) => set({ input }),
+  resetInput: () => set({ input: "" }),
+}));
 
-const userInput = atom({
-  key: "userInput",
-  default: ""
-});
-
-export { items, useResetItem, userInput };
+export { useItemsStore, useUserInputStore };

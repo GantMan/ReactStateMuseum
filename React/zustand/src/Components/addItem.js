@@ -1,20 +1,16 @@
 import React from "react";
-import { useRecoilState } from "recoil";
-import { userInput, items, useResetItem } from "../store";
+import { useUserInputStore, useItemsStore } from "../store";
 
 import { AddPackingItem } from "packlist-components";
 
 const AddItems = () => {
-  const [input, setInput] = useRecoilState(userInput);
-  const [allItems, setItem] = useRecoilState(items);
-  const resetItem = useResetItem();
+  const { input, setInput, resetInput } = useUserInputStore();
+  const addListItem = useItemsStore((state) => state.addItem);
+  const resetItem = useItemsStore((state) => state.resetItems);
 
   const addItem = () => {
-    setItem([...allItems, input]);
+    addListItem(input);
     resetInput();
-  };
-  const resetInput = () => {
-    setInput("");
   };
 
   return (

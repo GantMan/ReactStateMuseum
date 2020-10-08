@@ -1,12 +1,10 @@
 import React from "react";
 import { SimpleList } from "packlist-components";
-import { useRecoilValue } from "recoil";
-import { items } from "../store";
+import { useItemsStore } from "../store";
 
 const ListItems = () => {
-  const itemList = useRecoilValue(items);
-
-  return <SimpleList value={itemList} />;
+  const { items } = useItemsStore();
+  return <SimpleList value={items} />;
 };
 
 export default ListItems;
