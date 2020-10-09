@@ -5,10 +5,10 @@
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {
-    "constate": "0.8.0",
+    "constate": "3.0.1",
     "packlist-components": "^1.2.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "^1.1.4"
   },
   "devDependencies": {},

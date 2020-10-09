@@ -8,22 +8,22 @@
  ************************************************/
 import React from "react";
 import { render } from "react-dom";
-import { Provider } from "constate";
 import AddItem from "./Components/addItem";
 import ListItems from "./Components/listItems";
+import { PackingProvider } from "./Constate/packingContext";
 
 const styles = {
   fontFamily: "sans-serif",
-  textAlign: "center"
+  textAlign: "center",
 };
 
 render(
-  <Provider devtools>
+  <PackingProvider>
     <div style={styles}>
       <h2>Welcome to React Constate!</h2>
       <AddItem />
       <ListItems />
     </div>
-  </Provider>,
+  </PackingProvider>,
   document.getElementById("root")
 );
