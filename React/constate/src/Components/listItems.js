@@ -1,13 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { SimpleList } from "packlist-components";
-import { ItemsContainer } from "../container";
+import { usePackingContext } from "../Constate/packingContext";
 
-export default class ListItems extends Component {
-  render() {
-    return (
-      <ItemsContainer context="items">
-        {({ allItems }) => <SimpleList value={allItems} />}
-      </ItemsContainer>
-    );
-  }
+export default function ListItems() {
+  const { allItems } = usePackingContext();
+
+  return <SimpleList value={allItems} />;
 }
