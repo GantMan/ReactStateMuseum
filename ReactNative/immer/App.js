@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView } from 'react-native';
-import produce from 'immer';
+import produce, {enableES5} from 'immer';
 import ListItems from './Components/listItems';
 import AddItems from './Components/addItems';
+
+enableES5();
 
 export default class App extends React.Component {
   state = {
