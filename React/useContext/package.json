@@ -1,0 +1,32 @@
+{
+  "name": "useContext-rsm",
+  "version": "1.0.0",
+  "description": "React State Museum - Example of State management using useContext",
+  "main": "src/index.js",
+  "keywords": [],
+  "dependencies": {
+    "packlist-components": "^1.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
