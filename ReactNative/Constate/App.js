@@ -31,12 +31,6 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-    padding: 20,
-  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
