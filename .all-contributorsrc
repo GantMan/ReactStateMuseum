@@ -408,6 +408,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "httpstersk",
+      "name": "Lubos Belak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6890321?v=4",
+      "profile": "https://httpster.sk/",
+      "contributions": [
+        "bug"
+      ]
     }
   ]
 }
