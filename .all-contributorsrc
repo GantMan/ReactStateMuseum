@@ -426,6 +426,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "msteckyefantis",
+      "name": "Frontend Dev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13184324?v=4",
+      "profile": "https://github.com/msteckyefantis",
+      "contributions": [
+        "code",
+        "doc",
+        "example"
+      ]
     }
   ]
 }
