@@ -399,6 +399,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "pawelsas",
+      "name": "Pawel Sas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15066762?v=4",
+      "profile": "https://www.linkedin.com/in/pawelsas/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
