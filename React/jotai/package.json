@@ -1,8 +1,8 @@
 {
   "name": "react-jotai",
   "version": "0.1.0",
-  "private": true,
   "author": "jalalbmnf",
+  "description": "React State Museum - Example of Jōtai",
   "dependencies": {
     "jotai": "^1.12.1",
     "packlist-components": "^1.2.0",
